@@ -1,0 +1,12 @@
+C:\C#\RunDll\BaseOutPut\bin\Debug\BaseOutPut.pdb
+C:\C#\RunDll\BaseOutPut\obj\Debug\BaseOutPut.csprojAssemblyReference.cache
+C:\C#\RunDll\BaseOutPut\obj\Debug\BaseOutPut.csproj.CoreCompileInputs.cache
+C:\C#\RunDll\BaseOutPut\obj\Debug\BaseOutPut.dll
+C:\C#\RunDll\BaseOutPut\obj\Debug\BaseOutPut.pdb
+C:\C#\RunDll\BaseOutPut\obj\Debug\BaseOutPut.csproj.CopyComplete
+C:\C#\RunDll\BaseOutPut\bin\Debug\Shell.dll
+C:\C#\RunDll\BaseOutPut\bin\Debug\Shell.pdb
+C:\C#\RunDll\BaseOutPut\bin\Debug\Correct Input.dll
+C:\C#\RunDll\BaseOutPut\bin\Debug\Correct Input.pdb
+C:\C#\RunDll\BaseOutPut\bin\Debug\BaseOutPut.dll.CodeAnalysisLog.xml
+C:\C#\RunDll\BaseOutPut\bin\Debug\BaseOutPut.dll.lastcodeanalysissucceeded

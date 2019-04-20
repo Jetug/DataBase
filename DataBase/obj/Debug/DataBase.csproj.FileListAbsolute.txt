@@ -1,0 +1,17 @@
+C:\C#\RunDll\DataBase\bin\Debug\DataBase.dll
+C:\C#\RunDll\DataBase\bin\Debug\DataBase.pdb
+C:\C#\RunDll\DataBase\bin\Debug\BaseOutPut.dll
+C:\C#\RunDll\DataBase\bin\Debug\Shell.dll
+C:\C#\RunDll\DataBase\bin\Debug\Shell.pdb
+C:\C#\RunDll\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
+C:\C#\RunDll\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\C#\RunDll\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+C:\C#\RunDll\DataBase\obj\Debug\DataBase.dll
+C:\C#\RunDll\DataBase\obj\Debug\DataBase.pdb
+C:\C#\RunDll\DataBase\bin\Debug\Correct Input.dll
+C:\C#\RunDll\DataBase\bin\Debug\Correct Input.pdb
+C:\C#\RunDll\DataBase\bin\Debug\MyLib.dll
+C:\C#\RunDll\DataBase\bin\Debug\MyLib.pdb
+C:\C#\RunDll\DataBase\bin\Debug\BaseOutPut.pdb
+C:\C#\RunDll\DataBase\bin\Debug\DataBase.dll.CodeAnalysisLog.xml
+C:\C#\RunDll\DataBase\bin\Debug\DataBase.dll.lastcodeanalysissucceeded

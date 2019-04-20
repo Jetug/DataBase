@@ -1,0 +1,18 @@
+C:\C#\RunDll\RunDll\bin\Debug\RunDll.exe.config
+C:\C#\RunDll\RunDll\bin\Debug\RunDll.exe
+C:\C#\RunDll\RunDll\bin\Debug\RunDll.pdb
+C:\C#\RunDll\RunDll\obj\Debug\RunDll.csproj.CoreCompileInputs.cache
+C:\C#\RunDll\RunDll\obj\Debug\RunDll.csproj.CopyComplete
+C:\C#\RunDll\RunDll\obj\Debug\RunDll.exe
+C:\C#\RunDll\RunDll\obj\Debug\RunDll.pdb
+C:\C#\RunDll\RunDll\bin\Debug\Shell.dll
+C:\C#\RunDll\RunDll\bin\Debug\Shell.pdb
+C:\C#\RunDll\RunDll\bin\Debug\BaseOutPut.dll
+C:\C#\RunDll\RunDll\bin\Debug\DataBase.dll
+C:\C#\RunDll\RunDll\bin\Debug\DataBase.pdb
+C:\C#\RunDll\RunDll\bin\Debug\Correct Input.dll
+C:\C#\RunDll\RunDll\bin\Debug\Correct Input.pdb
+C:\C#\RunDll\RunDll\bin\Debug\MyLib.dll
+C:\C#\RunDll\RunDll\bin\Debug\MyLib.pdb
+C:\C#\RunDll\RunDll\obj\Debug\RunDll.csprojAssemblyReference.cache
+C:\C#\RunDll\RunDll\bin\Debug\BaseOutPut.pdb

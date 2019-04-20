@@ -1,0 +1,7 @@
+C:\C#\RunDll\Shell\bin\Debug\Shell.dll
+C:\C#\RunDll\Shell\bin\Debug\Shell.pdb
+C:\C#\RunDll\Shell\obj\Debug\Shell.csproj.CoreCompileInputs.cache
+C:\C#\RunDll\Shell\obj\Debug\Shell.dll
+C:\C#\RunDll\Shell\obj\Debug\Shell.pdb
+C:\C#\RunDll\Shell\bin\Debug\Shell.dll.CodeAnalysisLog.xml
+C:\C#\RunDll\Shell\bin\Debug\Shell.dll.lastcodeanalysissucceeded

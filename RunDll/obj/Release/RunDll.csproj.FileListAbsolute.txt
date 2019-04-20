@@ -1,0 +1,16 @@
+C:\C#\RunDll\RunDll\bin\Release\RunDll.exe.config
+C:\C#\RunDll\RunDll\bin\Release\RunDll.exe
+C:\C#\RunDll\RunDll\bin\Release\RunDll.pdb
+C:\C#\RunDll\RunDll\bin\Release\BaseOutPut.dll
+C:\C#\RunDll\RunDll\bin\Release\DataBase.dll
+C:\C#\RunDll\RunDll\bin\Release\Shell.dll
+C:\C#\RunDll\RunDll\bin\Release\Correct Input.dll
+C:\C#\RunDll\RunDll\bin\Release\BaseOutPut.pdb
+C:\C#\RunDll\RunDll\bin\Release\DataBase.pdb
+C:\C#\RunDll\RunDll\bin\Release\Shell.pdb
+C:\C#\RunDll\RunDll\bin\Release\Correct Input.pdb
+C:\C#\RunDll\RunDll\obj\Release\RunDll.csprojAssemblyReference.cache
+C:\C#\RunDll\RunDll\obj\Release\RunDll.csproj.CoreCompileInputs.cache
+C:\C#\RunDll\RunDll\obj\Release\RunDll.csproj.CopyComplete
+C:\C#\RunDll\RunDll\obj\Release\RunDll.exe
+C:\C#\RunDll\RunDll\obj\Release\RunDll.pdb
