@@ -76,7 +76,6 @@ namespace BaseOutPut
         //    public House hs;
         //    public Developer dev;
         //}
-        bool needToSave;
         Frames frame = new Frames();
         Input inp = new Input();
 
@@ -359,42 +358,48 @@ namespace BaseOutPut
                 }
             }
             //villages = LoadBase<Village>("village");
-
             //villages = FillList("village");
             ConsoleKey? key = ConsoleKey.RightArrow;
             int index = -10;
             while (key != ConsoleKey.Escape)
             {
-                switch (key)
+                if ((key == ConsoleKey.LeftArrow) && (index != 0))
                 {
-                    case ConsoleKey.LeftArrow:
-                        if (index != 0)
-                        {
-                            index -= 10;
-                            VillageList(index, villages);
-                        }
-                        break;
-                    case ConsoleKey.RightArrow:
-                        if (index + 10< villages.Count)
-                        {
-                            index += 10;
-                            VillageList(index, villages);
-                        }
-                        break;
-                    case ConsoleKey.Escape:
-                        Console.Clear();
-                        frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
-                        break;
+                    index -= 10;
+                    VillageList(index, villages);
+                }
+                else if((key == ConsoleKey.RightArrow) && (index + 10 < villages.Count))
+                {
+                    index += 10;
+                    VillageList(index, villages);
+                }
+                {
+                    //switch (key)
+                    //{
+                    //    case ConsoleKey.LeftArrow:
+                    //        if (index != 0)
+                    //        {
+                    //            index -= 10;
+                    //            VillageList(index, villages);
+                    //        }
+                    //        break;
+                    //    case ConsoleKey.RightArrow:
+                    //        if (index + 10 < villages.Count)
+                    //        {
+                    //            index += 10;
+                    //            VillageList(index, villages);
+                    //        }
+                    //        break;
+                    //    //case ConsoleKey.Escape:
+                    //    //    Console.Clear();
+                    //    //    frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
+                    //    //    break;
+                    //}
                 }
                 key = inp.InputKey(ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.Escape);
-                //Console.WriteLine("Key");
-                //GoBack(ref key);
-                if (key == ConsoleKey.Escape)
-                {
-                    Console.Clear();
-                    frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
-                }
             }
+            Console.Clear();
+            frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
         }
         
         /// <summary>
@@ -442,31 +447,25 @@ namespace BaseOutPut
                     houses.Add(house);
                 }
             }
-            Console.Clear();
-            Console.WriteLine("╔═════╦════════════════════╤════════════╤═══════════════╤═══════════════╤════════════════╗");
-            Console.WriteLine("║  №  ║  Назвение посёлка  │ Номер дома │ Площадь в м^2 │ Кол-во этажей │    Тип дома    ║");
-            Console.WriteLine("╠═════╬════════════════════╪════════════╪═══════════════╪═══════════════╪════════════════╣");
-            foreach (House h in houses)
+            ConsoleKey? key = ConsoleKey.RightArrow;
+            int index = -10;
+            while (key != ConsoleKey.Escape)
             {
-                Console.WriteLine("║     ║                    │            │               │               │                ║");
-                Console.Write    ("╟─────╫────────────────────┼────────────┼───────────────┼───────────────┼────────────────╢");
-
-                Console.SetCursorPosition(2, Console.CursorTop - 1);
-                Console.Write(h.number);
-                Console.SetCursorPosition(8, Console.CursorTop);
-                Console.Write(h.name);
-                Console.SetCursorPosition(29, Console.CursorTop);
-                Console.Write(h.num);
-                Console.SetCursorPosition(42, Console.CursorTop);
-                Console.Write(h.area);
-                Console.SetCursorPosition(58, Console.CursorTop);
-                Console.Write(h.floor);
-                Console.SetCursorPosition(74, Console.CursorTop);
-                Console.WriteLine(h.type);
-                Console.SetCursorPosition(0, Console.CursorTop + 1);
+                if ((key == ConsoleKey.LeftArrow) && (index != 0))
+                {
+                    index -= 10;
+                    HouseList(index, houses);
+                }
+                else if ((key == ConsoleKey.RightArrow) && (index + 10 < houses.Count))
+                {
+                    index += 10;
+                    HouseList(index, houses);
+                }
+               
+                key = inp.InputKey(ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.Escape);
             }
-            Console.SetCursorPosition(0, Console.CursorTop - 1);
-            Console.WriteLine("╚═════╩════════════════════╧════════════╧═══════════════╧═══════════════╧════════════════╝");
+            Console.Clear();
+            frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
         }
 
         /// <summary>
@@ -510,98 +509,117 @@ namespace BaseOutPut
                 }
             }
 
-            Console.Clear();
-            Console.WriteLine    ("╔═════╦═══════════════════════╤═══════════════╤══════════════════════════════════╗");
-            Console.WriteLine    ("║  №  ║     Девелопер         │ Годовой доход │         Адрес девелопера         ║");
-            Console.WriteLine    ("╠═════╬═══════════════════════╪═══════════════╪══════════════════════════════════╣");
-            foreach (Developer v in developers)
+            ConsoleKey? key = ConsoleKey.RightArrow;
+            int index = -10;
+            while (key != ConsoleKey.Escape)
             {
-                Console.WriteLine("║     ║                       │               │                                  ║");
-                Console.Write    ("╟─────╫───────────────────────┼───────────────┼──────────────────────────────────╢");
+                if ((key == ConsoleKey.LeftArrow) && (index != 0))
+                {
+                    index -= 10;
+                    DeveloperList(index, developers);
+                }
+                else if ((key == ConsoleKey.RightArrow) && (index + 10 < developers.Count))
+                {
+                    index += 10;
+                    DeveloperList(index, developers);
+                }
 
-                Console.SetCursorPosition(2, Console.CursorTop - 1);
-                Console.Write(v.number);
-                Console.SetCursorPosition(8, Console.CursorTop);
-                Console.Write(v.name);
-                Console.SetCursorPosition(32, Console.CursorTop);
-                Console.Write(v.inc);
-                Console.SetCursorPosition(48, Console.CursorTop);
-                Console.WriteLine(v.addr);
-                Console.SetCursorPosition(0, Console.CursorTop + 1);
+                key = inp.InputKey(ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.Escape);
             }
-            Console.SetCursorPosition(0, Console.CursorTop - 1);
-            Console.WriteLine    ("╚═════╩═══════════════════════╧═══════════════╧══════════════════════════════════╝");
+            Console.Clear();
+            frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
+
+            //Console.Clear();
+            //Console.WriteLine    ("╔═════╦═══════════════════════╤═══════════════╤══════════════════════════════════╗");
+            //Console.WriteLine    ("║  №  ║     Девелопер         │ Годовой доход │         Адрес девелопера         ║");
+            //Console.WriteLine    ("╠═════╬═══════════════════════╪═══════════════╪══════════════════════════════════╣");
+            //foreach (Developer v in developers)
+            //{
+            //    Console.WriteLine("║     ║                       │               │                                  ║");
+            //    Console.Write    ("╟─────╫───────────────────────┼───────────────┼──────────────────────────────────╢");
+
+            //    Console.SetCursorPosition(2, Console.CursorTop - 1);
+            //    Console.Write(v.number);
+            //    Console.SetCursorPosition(8, Console.CursorTop);
+            //    Console.Write(v.name);
+            //    Console.SetCursorPosition(32, Console.CursorTop);
+            //    Console.Write(v.inc);
+            //    Console.SetCursorPosition(48, Console.CursorTop);
+            //    Console.WriteLine(v.addr);
+            //    Console.SetCursorPosition(0, Console.CursorTop + 1);
+            //}
+            //Console.SetCursorPosition(0, Console.CursorTop - 1);
+            //Console.WriteLine    ("╚═════╩═══════════════════════╧═══════════════╧══════════════════════════════════╝");
         }
 
-        private List<T> LoadBase<T>(string name)
-        {
+        //private List<T> LoadBase<T>(string name)
+        //{
 
-            XmlDocument xVill = new XmlDocument();
-            xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
-            XmlElement villRoot = xVill.DocumentElement;
-            List<Village> villages = new List<Village>();
-            List<T> genList = new List<T>();
+        //    XmlDocument xVill = new XmlDocument();
+        //    xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+        //    XmlElement villRoot = xVill.DocumentElement;
+        //    List<Village> villages = new List<Village>();
+        //    List<T> genList = new List<T>();
 
 
 
-            foreach (XmlElement xnode in villRoot)
-            {
-                if (xnode.Name == "village")
-                {
-                    Village vill = new Village();
-                    XmlNode attr = xnode.Attributes.GetNamedItem("number");
-                    if (attr != null)
-                        vill.number = UInt32.Parse(attr.Value);
-                    foreach (XmlNode childnode in xnode.ChildNodes)
-                    {
-                        switch (childnode.Name)
-                        {
-                            case "name":
-                                vill.name = childnode.InnerText;
-                                break;
-                            case "dev":
-                                vill.dev = childnode.InnerText;
-                                break;
-                            case "area":
-                                vill.area = float.Parse(childnode.InnerText);
-                                break;
-                            case "people":
-                                vill.people = UInt32.Parse(childnode.InnerText);
-                                break;
-                        }
-                        genList.Add((T)(object)vill);
-                        villages.Add(vill);
-                    }
-                }
-            }
-            //List<T> tList = new List<T>();
-                return genList;
-            }
+        //    foreach (XmlElement xnode in villRoot)
+        //    {
+        //        if (xnode.Name == "village")
+        //        {
+        //            Village vill = new Village();
+        //            XmlNode attr = xnode.Attributes.GetNamedItem("number");
+        //            if (attr != null)
+        //                vill.number = UInt32.Parse(attr.Value);
+        //            foreach (XmlNode childnode in xnode.ChildNodes)
+        //            {
+        //                switch (childnode.Name)
+        //                {
+        //                    case "name":
+        //                        vill.name = childnode.InnerText;
+        //                        break;
+        //                    case "dev":
+        //                        vill.dev = childnode.InnerText;
+        //                        break;
+        //                    case "area":
+        //                        vill.area = float.Parse(childnode.InnerText);
+        //                        break;
+        //                    case "people":
+        //                        vill.people = UInt32.Parse(childnode.InnerText);
+        //                        break;
+        //                }
+        //                genList.Add((T)(object)vill);
+        //                villages.Add(vill);
+        //            }
+        //        }
+        //    }
+        //    //List<T> tList = new List<T>();
+        //        return genList;
+        //    }
         
-        private void VillageList(int i, List<Village> villages)
+        private void VillageList(int index, List<Village> villages)
         {
             Console.Clear();
             Console.WriteLine        ("╔═════╦════════════════════════╤═══════════════════════╤═══════════════╤═══════════╗");
             Console.WriteLine        ("║  №  ║    Назвение посёлка    │       Девелопер       │ Площадь в м^2 │ Население ║");
             Console.WriteLine        ("╠═════╬════════════════════════╪═══════════════════════╪═══════════════╪═══════════╣");
-            int n = i + 10;
-            for (i+=0; i < n; i++)
+            for (byte i = 0; i < 10; i++, index++)
             {
-                if (i < villages.Count())
+                if (index < villages.Count())
                 {
                     Console.WriteLine("║     ║                        │                       │               │           ║");
                     Console.Write    ("╟─────╫────────────────────────┼───────────────────────┼───────────────┼───────────╢");
 
                     Console.SetCursorPosition(2, Console.CursorTop - 1);
-                    Console.Write(villages[i].number);
+                    Console.Write(villages[index].number);
                     Console.SetCursorPosition(8, Console.CursorTop);
-                    Console.Write(villages[i].name);
+                    Console.Write(villages[index].name);
                     Console.SetCursorPosition(33, Console.CursorTop);
-                    Console.Write(villages[i].dev);
+                    Console.Write(villages[index].dev);
                     Console.SetCursorPosition(56, Console.CursorTop);
-                    Console.Write(villages[i].area);
+                    Console.Write(villages[index].area);
                     Console.SetCursorPosition(72, Console.CursorTop);
-                    Console.WriteLine(villages[i].people);
+                    Console.WriteLine(villages[index].people);
                     Console.SetCursorPosition(0, Console.CursorTop + 1);
                 }
             }
@@ -610,13 +628,82 @@ namespace BaseOutPut
             int lastPage;
             lastPage = villages.Count() % 10 == 0 ? (villages.Count() / 10) : (villages.Count() / 10 + 1);
             int x = Console.CursorLeft, y = Console.CursorTop;
-            frame.Menu(x, y , 20, "Стр. " + i/10+" из " + lastPage);
+            frame.Menu(x, y , 20, "Стр. " + index/10+" из " + lastPage);
+        }
+
+        private void HouseList(int index, List<House> houses)
+        {
+            Console.Clear();
+            Console.WriteLine("╔═════╦════════════════════╤════════════╤═══════════════╤═══════════════╤════════════════╗");
+            Console.WriteLine("║  №  ║  Назвение посёлка  │ Номер дома │ Площадь в м^2 │ Кол-во этажей │    Тип дома    ║");
+            Console.WriteLine("╠═════╬════════════════════╪════════════╪═══════════════╪═══════════════╪════════════════╣");
+            for (byte i = 0; i < 10; i++, index++)
+            {
+                if (index < houses.Count())
+                {
+                    Console.WriteLine("║     ║                    │            │               │               │                ║");
+                    Console.Write    ("╟─────╫────────────────────┼────────────┼───────────────┼───────────────┼────────────────╢");
+
+                    Console.SetCursorPosition(2, Console.CursorTop - 1);
+                    Console.Write(houses[index].number);
+                    Console.SetCursorPosition(8, Console.CursorTop);
+                    Console.Write(houses[index].name);
+                    Console.SetCursorPosition(29, Console.CursorTop);
+                    Console.Write(houses[index].num);
+                    Console.SetCursorPosition(42, Console.CursorTop);
+                    Console.Write(houses[index].area);
+                    Console.SetCursorPosition(58, Console.CursorTop);
+                    Console.Write(houses[index].floor);
+                    Console.SetCursorPosition(74, Console.CursorTop);
+                    Console.WriteLine(houses[index].type);
+                    Console.SetCursorPosition(0, Console.CursorTop + 1);
+                }
+            }
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
+            Console.WriteLine("╚═════╩════════════════════╧════════════╧═══════════════╧═══════════════╧════════════════╝");
+
+            int lastPage;
+            lastPage = houses.Count() % 10 == 0 ? (houses.Count() / 10) : (houses.Count() / 10 + 1);
+            int x = Console.CursorLeft, y = Console.CursorTop;
+            frame.Menu(x, y, 20, "Стр. " + index / 10 + " из " + lastPage);
+        }
+
+        private void DeveloperList(int index, List<Developer> developers)
+        {
+            Console.Clear();
+            Console.WriteLine    ("╔═════╦═══════════════════════╤═══════════════╤══════════════════════════════════╗");
+            Console.WriteLine    ("║  №  ║     Девелопер         │ Годовой доход │         Адрес девелопера         ║");
+            Console.WriteLine    ("╠═════╬═══════════════════════╪═══════════════╪══════════════════════════════════╣");
+            for (byte i = 0; i < 10; i++, index++)
+            {
+                if (index < developers.Count())
+                {
+
+                    Console.WriteLine("║     ║                       │               │                                  ║");
+                    Console.Write    ("╟─────╫───────────────────────┼───────────────┼──────────────────────────────────╢");
+
+                    Console.SetCursorPosition(2, Console.CursorTop - 1);
+                    Console.Write(developers[index].number);
+                    Console.SetCursorPosition(8, Console.CursorTop);
+                    Console.Write(developers[index].name);
+                    Console.SetCursorPosition(32, Console.CursorTop);
+                    Console.Write(developers[index].inc);
+                    Console.SetCursorPosition(48, Console.CursorTop);
+                    Console.WriteLine(developers[index].addr);
+                    Console.SetCursorPosition(0, Console.CursorTop + 1);
+                }
+            }
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
+            Console.WriteLine    ("╚═════╩═══════════════════════╧═══════════════╧══════════════════════════════════╝");
+            int lastPage;
+            lastPage = developers.Count() % 10 == 0 ? (developers.Count() / 10) : (developers.Count() / 10 + 1);
+            int x = Console.CursorLeft, y = Console.CursorTop;
+            frame.Menu(x, y, 20, "Стр. " + index / 10 + " из " + lastPage);
         }
 
         private string ChoiceDeveloper(int readPosY)
         {
             Console.SetCursorPosition(80, 0);
-            //ushort readPosY = (ushort)Console.CursorTop;
             List<string> developers = new List<string>();
             developers.Add("Выберите девелопера");
             XmlDocument xDev = new XmlDocument();

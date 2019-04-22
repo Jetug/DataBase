@@ -8,5 +8,3 @@ C:\C#\RunDll\BaseOutPut\bin\Debug\Shell.dll
 C:\C#\RunDll\BaseOutPut\bin\Debug\Shell.pdb
 C:\C#\RunDll\BaseOutPut\bin\Debug\Correct Input.dll
 C:\C#\RunDll\BaseOutPut\bin\Debug\Correct Input.pdb
-C:\C#\RunDll\BaseOutPut\bin\Debug\BaseOutPut.dll.CodeAnalysisLog.xml
-C:\C#\RunDll\BaseOutPut\bin\Debug\BaseOutPut.dll.lastcodeanalysissucceeded
