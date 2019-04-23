@@ -1171,4 +1171,11 @@
     <income>2</income>
     <address>3</address>
   </developer>
+  <village number="134">
+    <name>
+    </name>
+    <dev>Dev name 1</dev>
+    <area>0</area>
+    <people>0</people>
+  </village>
 </villages>

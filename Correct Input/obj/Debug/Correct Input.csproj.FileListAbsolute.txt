@@ -3,5 +3,4 @@ C:\C#\RunDll\Correct Input\bin\Debug\Correct Input.pdb
 C:\C#\RunDll\Correct Input\obj\Debug\Correct Input.csproj.CoreCompileInputs.cache
 C:\C#\RunDll\Correct Input\obj\Debug\Correct Input.dll
 C:\C#\RunDll\Correct Input\obj\Debug\Correct Input.pdb
-C:\C#\RunDll\Correct Input\bin\Debug\Correct Input.dll.CodeAnalysisLog.xml
-C:\C#\RunDll\Correct Input\bin\Debug\Correct Input.dll.lastcodeanalysissucceeded
+C:\C#\RunDll\Correct Input\obj\Debug\Correct Input.csprojAssemblyReference.cache

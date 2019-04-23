@@ -39,11 +39,11 @@ namespace Correct_Input
         /// <summary>
         /// Ограничивает количество вводимых символов и проверяет данные на корректность
         /// </summary>
-        public void ReadValid<T>(ref T inp, byte len)
+        public bool ReadValid<T>(ref T inp, byte len)
         {
             int x = Console.CursorLeft;
             string str;
-            bool cont = true;
+            bool cont = true, b = true;
             ConsoleKeyInfo key;
             ConsoleKey? k;
             while (cont)
@@ -66,6 +66,11 @@ namespace Correct_Input
                         Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
                         Console.Write(" ");
                         Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
+                    }
+                    else if (key.Key == ConsoleKey.Escape)
+                    {
+                        return false;
+                        //b = false;
                     }
                 }
                 str = str.Trim();
@@ -107,6 +112,8 @@ namespace Correct_Input
                 }
                 Console.SetCursorPosition(x, Console.CursorTop);
             }
+            return true;
+            //return b;
         }
     }
 }

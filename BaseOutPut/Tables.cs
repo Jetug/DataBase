@@ -528,28 +528,6 @@ namespace BaseOutPut
             }
             Console.Clear();
             frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
-
-            //Console.Clear();
-            //Console.WriteLine    ("╔═════╦═══════════════════════╤═══════════════╤══════════════════════════════════╗");
-            //Console.WriteLine    ("║  №  ║     Девелопер         │ Годовой доход │         Адрес девелопера         ║");
-            //Console.WriteLine    ("╠═════╬═══════════════════════╪═══════════════╪══════════════════════════════════╣");
-            //foreach (Developer v in developers)
-            //{
-            //    Console.WriteLine("║     ║                       │               │                                  ║");
-            //    Console.Write    ("╟─────╫───────────────────────┼───────────────┼──────────────────────────────────╢");
-
-            //    Console.SetCursorPosition(2, Console.CursorTop - 1);
-            //    Console.Write(v.number);
-            //    Console.SetCursorPosition(8, Console.CursorTop);
-            //    Console.Write(v.name);
-            //    Console.SetCursorPosition(32, Console.CursorTop);
-            //    Console.Write(v.inc);
-            //    Console.SetCursorPosition(48, Console.CursorTop);
-            //    Console.WriteLine(v.addr);
-            //    Console.SetCursorPosition(0, Console.CursorTop + 1);
-            //}
-            //Console.SetCursorPosition(0, Console.CursorTop - 1);
-            //Console.WriteLine    ("╚═════╩═══════════════════════╧═══════════════╧══════════════════════════════════╝");
         }
 
         //private List<T> LoadBase<T>(string name)
@@ -739,7 +717,6 @@ namespace BaseOutPut
                         {
                             frame.ContinuousChoice(x, y, ConsoleColor.White, 25);
                             y += 2;
-                            //Console.WriteLine(y);
                             frame.Choice(x, y, ConsoleColor.Green, 25);
                             if(y == 4)
                             {
@@ -812,20 +789,135 @@ namespace BaseOutPut
             return true;
         }
 
-        private void GoBack(ref ConsoleKey? key)
+        /// <summary>
+        /// Создаёт новый файл и вносит его в имя список
+        /// </summary>
+        public void CreateFile()
         {
-            ConsoleKeyInfo buf;
-            key = null;
-            while ((key != ConsoleKey.Tab) & (key != ConsoleKey.Escape))
+            Console.SetCursorPosition(30, 9);
+            frame.Continuous(30, "Введите имя файла", "");
+
+            Console.SetCursorPosition(32, 12);
+            Console.CursorVisible = true;
+            if (inp.ReadValid(ref fileName, 28))
             {
-                buf = Console.ReadKey(true);
-                key = buf.Key;
-                if (key == ConsoleKey.Escape)
-                {
-                    Console.Clear();
-                    frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
-                }
+                Console.CursorVisible = false;
+                XmlTextWriter textWritter = new XmlTextWriter($"C:/C#/RunDll/XMLfiles/{fileName}", Encoding.UTF8);
+
+                textWritter.WriteStartDocument();
+                textWritter.WriteStartElement("Win1");
+                textWritter.WriteEndElement();
+
+                textWritter.Close();
+
+                XmlDocument xDoc = new XmlDocument();
+                xDoc.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
+                XmlElement xRoot = xDoc.DocumentElement;
+                XmlElement xElem = xDoc.CreateElement("file");
+                XmlAttribute xAttr = xDoc.CreateAttribute("name");
+                xAttr.AppendChild(xDoc.CreateTextNode(fileName));
+                xElem.Attributes.Append(xAttr);
+                xRoot.AppendChild(xElem);
+                xDoc.Save($"C:/C#/RunDll/XMLfiles/FileList.xml");
+                fileName += ".xml";
             }
         }
+
+        public void Write_FileList()
+        {
+            List<string> files = Load_FileList();
+            Console.SetCursorPosition(30, 3);
+            frame.Continuous(30, files.ToArray());
+            int y;
+            int x = 30;
+            int i = 1;
+            ConsoleKey? key = null;
+            y = 5;
+            frame.Choice(x, y, ConsoleColor.Green, 30);
+            while ((key != ConsoleKey.Enter) && (key != ConsoleKey.Escape))
+            {
+                key = inp.InputKey(ConsoleKey.DownArrow, ConsoleKey.UpArrow, ConsoleKey.Enter, ConsoleKey.Escape);
+                switch (key)
+                {
+                    case ConsoleKey.DownArrow:
+
+                        if ((y / 2) < files.Count)
+                        {
+                            frame.ContinuousChoice(x, y, ConsoleColor.White, 30);
+                            y += 2;
+                            ++i;
+                            Console.WriteLine(i);
+                            frame.Choice(x, y, ConsoleColor.Green, 30);
+                            if (y == 7)
+                            {
+                                Console.SetCursorPosition(x, 5);
+                                string line = new string('═', 30);
+                                Console.WriteLine($"╠{line}╣");
+                            }
+                        }
+                        break;
+                    case ConsoleKey.UpArrow:
+                        if (y != 5)
+                        {
+                            frame.ContinuousChoice(x, y, ConsoleColor.White, 30);
+                            y -= 2;
+                            --i;
+                            Console.WriteLine(i);
+
+                            frame.Choice(x, y, ConsoleColor.Green, 30);
+
+                            if ((y / 2) == files.Count - 2);
+                            {
+                                Console.SetCursorPosition(x, (files.Count) * 2 + 3);
+                                string line = new string('═', 30);
+                                Console.WriteLine($"╚{line}╝");
+                            }  
+                        }
+                        break;
+                    case ConsoleKey.Enter:
+                        fileName = files[i]+".xml";
+                        Console.WriteLine(files[i]);
+                        Console.WriteLine(fileName);
+                        break;
+                }
+            }
+
+        }
+
+        private List<string> Load_FileList()
+        {
+            List<string> files = new List<string>
+            {
+                "Выберете файл"
+            };
+            XmlDocument xDev = new XmlDocument();
+            xDev.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
+            XmlElement devRoot = xDev.DocumentElement;
+
+            foreach (XmlElement xnode in devRoot)
+            {
+                    string f = "";
+                    XmlNode attr = xnode.Attributes.GetNamedItem("name");
+                    if (attr != null)
+                        f = attr.Value;
+                    files.Add(f);
+            }
+            return files;
+        }
+        //private void GoBack(ref ConsoleKey? key)
+        //{
+        //    ConsoleKeyInfo buf;
+        //    key = null;
+        //    while ((key != ConsoleKey.Tab) & (key != ConsoleKey.Escape))
+        //    {
+        //        buf = Console.ReadKey(true);
+        //        key = buf.Key;
+        //        if (key == ConsoleKey.Escape)
+        //        {
+        //            Console.Clear();
+        //            frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
+        //        }
+        //    }
+        //}
     }
 }

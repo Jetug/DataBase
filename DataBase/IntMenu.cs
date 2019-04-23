@@ -68,7 +68,7 @@ namespace DataBase
                     {
                         case 12: // Ввод имени файла
                             Console.Clear();
-                            frame.Menu(30, 3, 30, "Выброр существующего файла", "Создание нового файла");
+                            frame.Menu(30, 3, 30, "Выброр существующего файла", "Создание нового файла", "Удаление файла");
                             ConsoleKey? key = null;
                             y = 3;
                             frame.Choice(30, y, ConsoleColor.Green, 30);
@@ -78,7 +78,7 @@ namespace DataBase
                                 switch (key)
                                 {
                                     case ConsoleKey.DownArrow:
-                                        if(y != 6)
+                                        if(y != 9)
                                         {
                                             frame.Choice(30, y, ConsoleColor.White, 30);
                                             y += 3;
@@ -93,26 +93,25 @@ namespace DataBase
                                             frame.Choice(30, y, ConsoleColor.Green, 30);
                                         } 
                                         break;
+                                    case ConsoleKey.Enter:
+                                        switch (y)
+                                        {
+                                            case 3:
+                                                Console.Clear();
+                                                table.Write_FileList();
+                                                break;
+                                            case 6:
+                                                Console.Clear();
+                                                table.CreateFile();
+                                                break;
+                                        }
+                                        Console.Clear();
+                                        frame.Menu(30, 3, 30, "Выброр существующего файла", "Создание нового файла","Удаление файла");
+                                        frame.Choice(30, y, ConsoleColor.Green, 30);
+                                        break;
                                 }
                             }
-                            Console.SetCursorPosition(30, 9);
-                            frame.Continuous(30, "Введите имя файла", "");  
-                            Console.SetCursorPosition(32, 12);
-                            Console.CursorVisible = true;
-                            inp.ReadValid(ref table.fileName, 28);
-                            Console.CursorVisible = false;
-                            {
-                                XmlDocument xDoc = new XmlDocument();
-                                xDoc.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
-                                XmlElement xRoot = xDoc.DocumentElement;
-                                XmlElement xElem = xDoc.CreateElement("file");
-                                XmlAttribute xAttr = xDoc.CreateAttribute("name");
-                                xAttr.AppendChild(xDoc.CreateTextNode(table.fileName));
-                                xElem.Attributes.Append(xAttr);
-                                xRoot.AppendChild(xElem);
-                                xDoc.Save($"C:/C#/RunDll/XMLfiles/FileList.xml");
-                            }
-                            table.fileName += ".xml";
+                            
                             Console.Clear();
                             frame.Menu(30, 3, 30, "Ввод базы данных", "Редактирование базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
                             //main_y = 0;
@@ -134,7 +133,6 @@ namespace DataBase
                                     case ConsoleKey.DownArrow:
                                         if (y != 9)
                                         {
-                                            //if (y != 3)
                                             frame.Choice(x, y, ConsoleColor.White, 18);
                                             y += 3;
                                             frame.Choice(x, y, col, 18);
