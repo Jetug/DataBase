@@ -105,7 +105,7 @@ namespace Correct_Input
                     Console.Write(clear);
                     Console.SetCursorPosition(x, Console.CursorTop);
                     Console.Write("Ошибка");
-                    Thread.Sleep(500);
+                    Thread.Sleep(400);
                     Console.SetCursorPosition(x, Console.CursorTop);
                     Console.Write(clear);
                     Console.SetCursorPosition(x, Console.CursorTop);

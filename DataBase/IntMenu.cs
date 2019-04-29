@@ -18,10 +18,9 @@ namespace DataBase
 {
     public class IntMenu
     {
+           // Вывести назначение программы
 
-        // Вывести назначение программы
-        
-        ConsoleColor col = ConsoleColor.Green;
+           ConsoleColor col = ConsoleColor.Green;
         public IntMenu()
         {
             Console.CursorVisible = false;
@@ -39,11 +38,11 @@ namespace DataBase
 
             ConsoleKey? mKey = null;
             int main_x = 30, main_y = 3;
-            bool cont = true;
+            bool canСontinue = true;
 
             frame.Menu(30, 3, 30, "Ввод базы данных", "Редактирование базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
             frame.Choice(main_x, main_y, col, 30);
-            while (cont)
+            while (canСontinue)
             {
                 mKey = inp.InputKey(ConsoleKey.DownArrow, ConsoleKey.UpArrow, ConsoleKey.Enter);
 
@@ -104,6 +103,10 @@ namespace DataBase
                                                 Console.Clear();
                                                 table.CreateFile();
                                                 break;
+                                            case 9:
+                                                Console.Clear();
+                                                table.Write_FileList(true);
+                                                break;
                                         }
                                         Console.Clear();
                                         frame.Menu(30, 3, 30, "Выброр существующего файла", "Создание нового файла","Удаление файла");
@@ -118,7 +121,7 @@ namespace DataBase
                             frame.Choice(main_x, main_y, col, 30);
                             break;
                         case 15: // Выход из программы
-                            cont = false;
+                            canСontinue = false;
                             break;
                         default:
                             Console.Clear();
@@ -178,7 +181,7 @@ namespace DataBase
                                             Console.Clear();
                                             frame.Menu(30, 5, 31, "Ошибка! Имя файла не выбранно");
                                             //frame.Menu(30, 5, 31, e);
-
+                                            throw;
                                             back = inp.InputKey(ConsoleKey.Escape);
                                             if (back == ConsoleKey.Escape)
                                             {

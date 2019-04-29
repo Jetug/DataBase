@@ -7,9 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Xml;
 using Shell;
 using Correct_Input;
+using System.IO;
 
 namespace BaseOutPut
 {
@@ -19,7 +21,7 @@ namespace BaseOutPut
         {
             Console.CursorVisible = false;
         }
-        public string fileName = "Villages.xml";
+        public string fileName = "Villages";
         ConsoleColor col = ConsoleColor.Green;
 
         public struct Village
@@ -102,7 +104,6 @@ namespace BaseOutPut
                 Console.CursorVisible = false;
                 vill.dev = ChoiceDeveloper(Console.CursorTop);
                 Console.CursorVisible = true;
-                //inp.ReadValid(ref vill.dev, 21);
                 Console.SetCursorPosition(51, Console.CursorTop);
                 inp.ReadValid(ref vill.area, 13);
                 Console.SetCursorPosition(67, Console.CursorTop);
@@ -115,12 +116,12 @@ namespace BaseOutPut
                 villages.Add(vill);
 
                 key = inp.InputKey(ConsoleKey.Tab, ConsoleKey.Escape);
-                if ((key == ConsoleKey.Escape) && (Call_SaveMassage(30, 10)))
+                if ((key == ConsoleKey.Escape) && (Call_MassageBox(30, 10, "Cозранить изменения?")))
                 {
                     foreach (Village v in villages)
                     {
                         XmlDocument xVill = new XmlDocument();
-                        xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+                        xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
                         XmlElement villRoot = xVill.DocumentElement;
                         XmlElement villElem = xVill.CreateElement("village");
                         XmlAttribute numAttr = xVill.CreateAttribute("number");
@@ -151,7 +152,7 @@ namespace BaseOutPut
                         villElem.AppendChild(areaElem);
                         villElem.AppendChild(peopleElem);
                         villRoot.AppendChild(villElem);
-                        xVill.Save($"C:/C#/RunDll/XMLfiles/{fileName}");
+                        xVill.Save($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
                     }
                 }
             }
@@ -195,12 +196,12 @@ namespace BaseOutPut
                 houses.Add(house);
 
                 key = inp.InputKey(ConsoleKey.Tab, ConsoleKey.Escape);
-                if ((key == ConsoleKey.Escape) && (Call_SaveMassage(30, 10)))
+                if ((key == ConsoleKey.Escape) && (Call_MassageBox(30, 10, "Cозранить изменения?")))
                 {
                     foreach (House h in houses)
                     {
                         XmlDocument xHouse = new XmlDocument();
-                        xHouse.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+                        xHouse.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
                         XmlElement houseRoot = xHouse.DocumentElement;
                         XmlElement houseElem = xHouse.CreateElement("house");
                         XmlAttribute numberAttr = xHouse.CreateAttribute("number");
@@ -235,7 +236,7 @@ namespace BaseOutPut
                         houseElem.AppendChild(floorElem);
                         houseElem.AppendChild(typeElem);
                         houseRoot.AppendChild(houseElem);
-                        xHouse.Save("C:/C#/RunDll/XMLfiles/Villages.xml");
+                        xHouse.Save($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
                     }
 
                 }
@@ -275,12 +276,12 @@ namespace BaseOutPut
                 developers.Add(dev);
 
                 key = inp.InputKey(ConsoleKey.Tab, ConsoleKey.Escape);
-                if ((key == ConsoleKey.Escape) && (Call_SaveMassage(30, 10)))
+                if ((key == ConsoleKey.Escape) && (Call_MassageBox(30, 10, "Cозранить изменения?")))
                 {
                     foreach (Developer d in developers)
                     {
                         XmlDocument xDev = new XmlDocument();
-                        xDev.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+                        xDev.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
                         XmlElement devRoot = xDev.DocumentElement;
                         XmlElement devElem = xDev.CreateElement("developer");
                         XmlAttribute numberAttr = xDev.CreateAttribute("number");
@@ -309,7 +310,7 @@ namespace BaseOutPut
                         devElem.AppendChild(incomeElem);
                         devElem.AppendChild(addressElem);
                         devRoot.AppendChild(devElem);
-                        xDev.Save($"C:/C#/RunDll/XMLfiles/{fileName}");
+                        xDev.Save($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
                     }
                 }
             }
@@ -324,7 +325,7 @@ namespace BaseOutPut
         {
             List<Village> villages = new List<Village>();
             XmlDocument xVill = new XmlDocument();
-            xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+            xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
             XmlElement villRoot = xVill.DocumentElement;
 
             foreach (XmlElement xnode in villRoot)
@@ -357,8 +358,12 @@ namespace BaseOutPut
                     villages.Add(vill);
                 }
             }
-            //villages = LoadBase<Village>("village");
-            //villages = FillList("village");
+            //List<Village> sort = new List<Village>();
+            //foreach (Village v in villages)
+            //{
+            //    if (v.name == "1")
+            //        sort.Add(v);
+            //}
             ConsoleKey? key = ConsoleKey.RightArrow;
             int index = -10;
             while (key != ConsoleKey.Escape)
@@ -410,7 +415,7 @@ namespace BaseOutPut
             List<House> houses = new List<House>();
 
             XmlDocument xHouse = new XmlDocument();
-            xHouse.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+            xHouse.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
             XmlElement houseRoot = xHouse.DocumentElement;
 
 
@@ -476,7 +481,7 @@ namespace BaseOutPut
             List<Developer> developers = new List<Developer>();
 
             XmlDocument xDev = new XmlDocument();
-            xDev.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+            xDev.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
             XmlElement devRoot = xDev.DocumentElement;
 
 
@@ -594,9 +599,9 @@ namespace BaseOutPut
                     Console.Write(villages[index].name);
                     Console.SetCursorPosition(33, Console.CursorTop);
                     Console.Write(villages[index].dev);
-                    Console.SetCursorPosition(56, Console.CursorTop);
+                    Console.SetCursorPosition(57, Console.CursorTop);
                     Console.Write(villages[index].area);
-                    Console.SetCursorPosition(72, Console.CursorTop);
+                    Console.SetCursorPosition(73, Console.CursorTop);
                     Console.WriteLine(villages[index].people);
                     Console.SetCursorPosition(0, Console.CursorTop + 1);
                 }
@@ -685,7 +690,7 @@ namespace BaseOutPut
             List<string> developers = new List<string>();
             developers.Add("Выберите девелопера");
             XmlDocument xDev = new XmlDocument();
-            xDev.Load($"C:/C#/RunDll/XMLfiles/{fileName}");
+            xDev.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
             XmlElement devRoot = xDev.DocumentElement;
             foreach (XmlElement xnode in devRoot)
             {
@@ -751,10 +756,10 @@ namespace BaseOutPut
             return developers[y / 2];
         }
 
-        private bool Call_SaveMassage(int x, int y)
+        public bool Call_MassageBox(int x, int y, string title)
         {
             Console.Clear();
-            frame.Menu(x, y, 22, "Cозранить изменения?");
+            frame.Menu(x, y, 22, title);
             frame.Menu(x + 5, y + 3, 5, "Да");
             frame.Menu(x + 12, y + 3, 5, "Нет");
 
@@ -795,39 +800,93 @@ namespace BaseOutPut
         public void CreateFile()
         {
             Console.SetCursorPosition(30, 9);
-            frame.Continuous(30, "Введите имя файла", "");
-
-            Console.SetCursorPosition(32, 12);
-            Console.CursorVisible = true;
-            if (inp.ReadValid(ref fileName, 28))
+            frame.Continuous(33, "Введите имя файла", "");
+            bool canСontinue = true;
+            while (canСontinue)
             {
-                Console.CursorVisible = false;
-                XmlTextWriter textWritter = new XmlTextWriter($"C:/C#/RunDll/XMLfiles/{fileName}", Encoding.UTF8);
+                Console.SetCursorPosition(32, 12);
+                Console.CursorVisible = true;
+                if (inp.ReadValid(ref fileName, 28))
+                {
+                    if (!File.Exists($"C:/C#/RunDll/XMLfiles/{fileName}.xml"))
+                    {
+                        Console.CursorVisible = false;
+                        try
+                        {
+                            XmlTextWriter textWritter = new XmlTextWriter($"C:/C#/RunDll/XMLfiles/{fileName}.xml", Encoding.UTF8);
+                            textWritter.WriteStartDocument();
+                            textWritter.WriteStartElement("Villages");
+                            textWritter.WriteEndElement();
 
-                textWritter.WriteStartDocument();
-                textWritter.WriteStartElement("Win1");
-                textWritter.WriteEndElement();
+                            textWritter.Close();
 
-                textWritter.Close();
-
-                XmlDocument xDoc = new XmlDocument();
-                xDoc.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
-                XmlElement xRoot = xDoc.DocumentElement;
-                XmlElement xElem = xDoc.CreateElement("file");
-                XmlAttribute xAttr = xDoc.CreateAttribute("name");
-                xAttr.AppendChild(xDoc.CreateTextNode(fileName));
-                xElem.Attributes.Append(xAttr);
-                xRoot.AppendChild(xElem);
-                xDoc.Save($"C:/C#/RunDll/XMLfiles/FileList.xml");
-                fileName += ".xml";
+                            //XmlDocument xDoc = new XmlDocument();
+                            //xDoc.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
+                            //XmlElement xRoot = xDoc.DocumentElement;
+                            //XmlElement xElem = xDoc.CreateElement("file");
+                            //XmlAttribute xAttr = xDoc.CreateAttribute("name");
+                            //xAttr.AppendChild(xDoc.CreateTextNode(fileName));
+                            //xElem.Attributes.Append(xAttr);
+                            //xRoot.AppendChild(xElem);
+                            //xDoc.Save($"C:/C#/RunDll/XMLfiles/FileList.xml");
+                            canСontinue = false;
+                        }
+                        catch (Exception)
+                        {
+                            Console.CursorVisible = false;
+                            string clear = new string(' ', 32);
+                            Console.SetCursorPosition(32, 12);
+                            Console.Write(clear);
+                            Console.SetCursorPosition(32, 12);
+                            Console.Write("Недопустимые знаки в имени файла");
+                            Thread.Sleep(600);
+                            Console.SetCursorPosition(32, 12);
+                            Console.Write(clear);
+                        }
+                    }
+                    else
+                    {
+                        Console.CursorVisible = false;
+                        string clear = new string(' ', 28);
+                        Console.SetCursorPosition(32, 12);
+                        Console.Write(clear);
+                        Console.SetCursorPosition(32, 12);
+                        Console.Write("Файл уже существует");
+                        Thread.Sleep(600);
+                        Console.SetCursorPosition(32, 12);
+                        Console.Write(clear);
+                    }
+                }
+                else
+                    canСontinue = false;
             }
         }
 
-        public void Write_FileList()
+        /// <summary>
+        /// Выводит список существующих файлов
+        /// </summary>
+        public void Write_FileList(bool del = false)
         {
-            List<string> files = Load_FileList();
+            //List<string> files = Load_FileList();
+            
+            //List<string> files = new List<string>();
+            //files = Directory.GetFiles(@"C:/C#/RunDll/XMLfiles", "*.xml").ToList<string>();
+            //files.Insert(0, "Выберете файл");
+
+            //DirectoryInfo dinfo = new DirectoryInfo("C:/C#/RunDll/XMLfiles");
+            //FileInfo[] files = dinfo.GetFiles();
+
+            //Console.SetCursorPosition(30, 3);
+            //frame.Continuous(30, (files));
+            DirectoryInfo dinfo = new DirectoryInfo(@"C:/C#/RunDll/XMLfiles");
+            FileInfo[] fileInfo = dinfo.GetFiles();
+            List<string> files = new List<string> { "Выберете файл" };
+
+            foreach (FileInfo f in fileInfo)
+                files.Add(f.ToString().Replace(".xml", ""));
+
             Console.SetCursorPosition(30, 3);
-            frame.Continuous(30, files.ToArray());
+            frame.Continuous(30, (files.ToArray()));
             int y;
             int x = 30;
             int i = 1;
@@ -846,7 +905,6 @@ namespace BaseOutPut
                             frame.ContinuousChoice(x, y, ConsoleColor.White, 30);
                             y += 2;
                             ++i;
-                            Console.WriteLine(i);
                             frame.Choice(x, y, ConsoleColor.Green, 30);
                             if (y == 7)
                             {
@@ -862,8 +920,6 @@ namespace BaseOutPut
                             frame.ContinuousChoice(x, y, ConsoleColor.White, 30);
                             y -= 2;
                             --i;
-                            Console.WriteLine(i);
-
                             frame.Choice(x, y, ConsoleColor.Green, 30);
 
                             if ((y / 2) == files.Count - 2);
@@ -875,9 +931,13 @@ namespace BaseOutPut
                         }
                         break;
                     case ConsoleKey.Enter:
-                        fileName = files[i]+".xml";
-                        Console.WriteLine(files[i]);
-                        Console.WriteLine(fileName);
+                        if ((del) && (Call_MassageBox(30, 3, "Удалить файл?")))
+                        {
+                            File.Delete($"C:/C#/RunDll/XMLfiles/{files[i]}.xml");
+                        }
+                        else
+                            fileName = files[i];
+
                         break;
                 }
             }
@@ -886,38 +946,27 @@ namespace BaseOutPut
 
         private List<string> Load_FileList()
         {
-            List<string> files = new List<string>
-            {
-                "Выберете файл"
-            };
-            XmlDocument xDev = new XmlDocument();
-            xDev.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
-            XmlElement devRoot = xDev.DocumentElement;
+            List<string> fileNames = new List<string>();
+            fileNames = Directory.GetFiles(@"C:/C#/RunDll/XMLfiles/", "*.xml").ToList<string>();
+            fileNames.Insert(0, "Выберете файл");
 
-            foreach (XmlElement xnode in devRoot)
-            {
-                    string f = "";
-                    XmlNode attr = xnode.Attributes.GetNamedItem("name");
-                    if (attr != null)
-                        f = attr.Value;
-                    files.Add(f);
-            }
-            return files;
+            //List<string> files = new List<string>
+            //{
+            //    "Выберете файл"
+            //};
+            //XmlDocument xDev = new XmlDocument();
+            //xDev.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
+            //XmlElement devRoot = xDev.DocumentElement;
+
+            //foreach (XmlElement xnode in devRoot)
+            //{
+            //        string f = "";
+            //        XmlNode attr = xnode.Attributes.GetNamedItem("name");
+            //        if (attr != null)
+            //            f = attr.Value;
+            //        files.Add(f);
+            //}
+            return fileNames;
         }
-        //private void GoBack(ref ConsoleKey? key)
-        //{
-        //    ConsoleKeyInfo buf;
-        //    key = null;
-        //    while ((key != ConsoleKey.Tab) & (key != ConsoleKey.Escape))
-        //    {
-        //        buf = Console.ReadKey(true);
-        //        key = buf.Key;
-        //        if (key == ConsoleKey.Escape)
-        //        {
-        //            Console.Clear();
-        //            frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
-        //        }
-        //    }
-        //}
     }
 }
