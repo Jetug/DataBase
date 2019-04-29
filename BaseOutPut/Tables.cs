@@ -31,7 +31,7 @@ namespace BaseOutPut
             public string dev;
             public float area;
             public uint people;
-            public Village(uint number, string name, string dev, float area, uint people)
+            public Village(uint number = 0, string name = "", string dev = "", float area = 0, uint people = 0)
             {
                 this.number = number;
                 this.name = name;
@@ -48,7 +48,7 @@ namespace BaseOutPut
             public float area;
             public byte floor;
             public string type;
-            public House(uint number, string name, ushort num, float area, byte floor, string type)
+            public House(uint number = 0, string name = "", ushort num = 0, float area = 0, byte floor = 0, string type = "")
             {
                 this.number = number;
                 this.name = name;
@@ -64,13 +64,20 @@ namespace BaseOutPut
             public string name;
             public float inc;
             public string addr;
-            public Developer(uint number, string name, float inc, string addr)
+            public Developer(uint number = 0, string name = "", float inc = 0, string addr = "")
             {
                 this.number = number;
                 this.name = name;
                 this.inc = inc;
                 this.addr = addr;
             }
+        }
+        public struct DataBase
+        {
+            public Village village;
+            public House house;
+            public Developer developer;
+
         }
         //public struct DataBase
         //{
@@ -118,48 +125,52 @@ namespace BaseOutPut
                 key = inp.InputKey(ConsoleKey.Tab, ConsoleKey.Escape);
                 if ((key == ConsoleKey.Escape) && (Call_MassageBox(30, 10, "Cозранить изменения?")))
                 {
-                    foreach (Village v in villages)
-                    {
-                        XmlDocument xVill = new XmlDocument();
-                        xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
-                        XmlElement villRoot = xVill.DocumentElement;
-                        XmlElement villElem = xVill.CreateElement("village");
-                        XmlAttribute numAttr = xVill.CreateAttribute("number");
-                        XmlElement nameElem = xVill.CreateElement("name");
-                        XmlElement areaElem = xVill.CreateElement("area");
-                        XmlElement peopleElem = xVill.CreateElement("people");
-                        XmlElement devElem = xVill.CreateElement("dev");
-
-                        uint number = 0;
-                        foreach (XmlElement xnode in villRoot)
-                        {
-                            if (xnode.Name == "village")
-                            {
-                                XmlNode attr = xnode.Attributes.GetNamedItem("number");
-                                if (attr != null)
-                                    number = UInt32.Parse(attr.Value) + 1;
-                            }
-                        }
-                        numAttr.AppendChild(xVill.CreateTextNode(number.ToString()));
-                        nameElem.AppendChild(xVill.CreateTextNode(v.name));
-                        devElem.AppendChild(xVill.CreateTextNode(v.dev));
-                        areaElem.AppendChild(xVill.CreateTextNode(v.area.ToString()));
-                        peopleElem.AppendChild(xVill.CreateTextNode(v.people.ToString()));
-
-                        villElem.Attributes.Append(numAttr);
-                        villElem.AppendChild(nameElem);
-                        villElem.AppendChild(devElem);
-                        villElem.AppendChild(areaElem);
-                        villElem.AppendChild(peopleElem);
-                        villRoot.AppendChild(villElem);
-                        xVill.Save($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
-                    }
+                    SaveInFile(villages);
                 }
             }
             Console.Clear();
             frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
         }
 
+        private void SaveInFile(List<Village> villages)
+        {
+            foreach (Village v in villages)
+            {
+                XmlDocument xVill = new XmlDocument();
+                xVill.Load($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
+                XmlElement villRoot = xVill.DocumentElement;
+                XmlElement villElem = xVill.CreateElement("village");
+                XmlAttribute numAttr = xVill.CreateAttribute("number");
+                XmlElement nameElem = xVill.CreateElement("name");
+                XmlElement areaElem = xVill.CreateElement("area");
+                XmlElement peopleElem = xVill.CreateElement("people");
+                XmlElement devElem = xVill.CreateElement("dev");
+
+                uint number = 0;
+                foreach (XmlElement xnode in villRoot)
+                {
+                    if (xnode.Name == "village")
+                    {
+                        XmlNode attr = xnode.Attributes.GetNamedItem("number");
+                        if (attr != null)
+                            number = UInt32.Parse(attr.Value) + 1;
+                    }
+                }
+                numAttr.AppendChild(xVill.CreateTextNode(number.ToString()));
+                nameElem.AppendChild(xVill.CreateTextNode(v.name));
+                devElem.AppendChild(xVill.CreateTextNode(v.dev));
+                areaElem.AppendChild(xVill.CreateTextNode(v.area.ToString()));
+                peopleElem.AppendChild(xVill.CreateTextNode(v.people.ToString()));
+
+                villElem.Attributes.Append(numAttr);
+                villElem.AppendChild(nameElem);
+                villElem.AppendChild(devElem);
+                villElem.AppendChild(areaElem);
+                villElem.AppendChild(peopleElem);
+                villRoot.AppendChild(villElem);
+                xVill.Save($"C:/C#/RunDll/XMLfiles/{fileName}.xml");
+            }
+        }
         /// <summary>
         /// Выводит таблицу, внутри которой считывает данные о домах
         /// </summary>
@@ -364,6 +375,7 @@ namespace BaseOutPut
             //    if (v.name == "1")
             //        sort.Add(v);
             //}
+
             ConsoleKey? key = ConsoleKey.RightArrow;
             int index = -10;
             while (key != ConsoleKey.Escape)
@@ -378,30 +390,10 @@ namespace BaseOutPut
                     index += 10;
                     VillageList(index, villages);
                 }
-                {
-                    //switch (key)
-                    //{
-                    //    case ConsoleKey.LeftArrow:
-                    //        if (index != 0)
-                    //        {
-                    //            index -= 10;
-                    //            VillageList(index, villages);
-                    //        }
-                    //        break;
-                    //    case ConsoleKey.RightArrow:
-                    //        if (index + 10 < villages.Count)
-                    //        {
-                    //            index += 10;
-                    //            VillageList(index, villages);
-                    //        }
-                    //        break;
-                    //    //case ConsoleKey.Escape:
-                    //    //    Console.Clear();
-                    //    //    frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
-                    //    //    break;
-                    //}
-                }
-                key = inp.InputKey(ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.Escape);
+                else if (key == ConsoleKey.Enter)
+                    Choice(ref villages, 7, 32, 56, 72);
+
+                key = inp.InputKey(ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.Enter ,ConsoleKey.Escape);
             }
             Console.Clear();
             frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
@@ -535,6 +527,50 @@ namespace BaseOutPut
             frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
         }
 
+        private void Choice<T>(ref List<T> list ,params byte[] coordinates)
+        {
+            coordinates.ToList();
+            Console.CursorVisible = true;
+            //Console.ForegroundColor = ConsoleColor.Green;
+            int x = 0, y = 3;
+            Console.SetCursorPosition(coordinates[x], y);
+            ConsoleKey? key = null;
+            while ((key != ConsoleKey.Escape) && (key != ConsoleKey.Delete))
+            {
+                key = inp.InputKey(ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.DownArrow, ConsoleKey.UpArrow, ConsoleKey.Delete, ConsoleKey.Escape);
+                switch (key)
+                {
+                    case ConsoleKey.RightArrow:
+                        if (x + 1 <= coordinates.Count() - 1)
+                            x++;
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        if (x - 1 >= 0)
+                            x--;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        if (y + 1 <= 20)
+                            y+=2;
+                        break;
+                    case ConsoleKey.UpArrow:
+                        if (y - 1 >= 3)
+                            y-=2;
+                        break;
+                    case ConsoleKey.Delete:
+                        list.RemoveAt(y/2-1);
+                        //List<Village> vill = new List<Village>();
+                        //foreach(T t in list)
+                        //{
+                        //    vill.Add((Village)(object)t);
+                        //}
+                        //SaveInFile(vill);
+                        break;
+                }
+                Console.SetCursorPosition(coordinates[x], y);
+            }
+            Console.CursorVisible = false;
+        }
+
         //private List<T> LoadBase<T>(string name)
         //{
 
@@ -579,7 +615,7 @@ namespace BaseOutPut
         //    //List<T> tList = new List<T>();
         //        return genList;
         //    }
-        
+
         private void VillageList(int index, List<Village> villages)
         {
             Console.Clear();
@@ -795,7 +831,7 @@ namespace BaseOutPut
         }
 
         /// <summary>
-        /// Создаёт новый файл и вносит его в имя список
+        /// Создаёт новый файл с введённым пользователем именем
         /// </summary>
         public void CreateFile()
         {
@@ -819,16 +855,6 @@ namespace BaseOutPut
                             textWritter.WriteEndElement();
 
                             textWritter.Close();
-
-                            //XmlDocument xDoc = new XmlDocument();
-                            //xDoc.Load($"C:/C#/RunDll/XMLfiles/FileList.xml");
-                            //XmlElement xRoot = xDoc.DocumentElement;
-                            //XmlElement xElem = xDoc.CreateElement("file");
-                            //XmlAttribute xAttr = xDoc.CreateAttribute("name");
-                            //xAttr.AppendChild(xDoc.CreateTextNode(fileName));
-                            //xElem.Attributes.Append(xAttr);
-                            //xRoot.AppendChild(xElem);
-                            //xDoc.Save($"C:/C#/RunDll/XMLfiles/FileList.xml");
                             canСontinue = false;
                         }
                         catch (Exception)

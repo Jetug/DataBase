@@ -45,14 +45,13 @@ namespace RunDll
             }*/
             Console.CursorVisible = false;
             IntMenu data = new IntMenu();
-            Console.SetWindowSize(110, 34);
+            //Console.SetWindowSize(110, 34);
             data.MainMenu();
 
             //Tables.Village vill = new Tables.Village();
             //Console.WriteLine(vill.name.GetType());
             //Input inp = new Input();
-            Console.SetCursorPosition(30, 10);
-            //f.Continuous(20, "Test","JoJo","Bizzare","Adventure","Golden", "Wind");
+            Console.SetCursorPosition(30, 20);
         }
     }
 }
