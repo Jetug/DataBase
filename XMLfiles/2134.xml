@@ -1,1 +1,642 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Villages />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VillagesBase>
+  <house number="">
+    <name>name_hs_1</name>
+    <num>11</num>
+    <area>1</area>
+    <floor>11</floor>
+    <type>type_hs_1</type>
+  </house>
+  <house number="">
+    <name>name_hs_2</name>
+    <num>22</num>
+    <area>2</area>
+    <floor>22</floor>
+    <type>type_hs_2</type>
+  </house>
+  <house number="">
+    <name>21</name>
+    <num>312</num>
+    <area>12</area>
+    <floor>21</floor>
+    <type>21</type>
+  </house>
+  <house number="">
+    <name>12</name>
+    <num>12</num>
+    <area>12</area>
+    <floor>21</floor>
+    <type>21</type>
+  </house>
+  <house number="">
+    <name>12</name>
+    <num>21</num>
+    <area>21</area>
+    <floor>21</floor>
+    <type>12</type>
+  </house>
+  <house number="">
+    <name>123</name>
+    <num>12</num>
+    <area>132</area>
+    <floor>132</floor>
+    <type>123</type>
+  </house>
+  <house number="">
+    <name>321</name>
+    <num>123</num>
+    <area>13</area>
+    <floor>12</floor>
+    <type>2314</type>
+  </house>
+  <house number="">
+    <name>test</name>
+    <num>23</num>
+    <area>24</area>
+    <floor>24</floor>
+    <type>24</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>11</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>2</name>
+    <num>0</num>
+    <area>2</area>
+    <floor>2</floor>
+    <type>2</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>0</num>
+    <area>1</area>
+    <floor>11</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>2</name>
+    <num>0</num>
+    <area>2</area>
+    <floor>2</floor>
+    <type>2</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>0</num>
+    <area>2</area>
+    <floor>2</floor>
+    <type>2</type>
+  </house>
+  <house number="">
+    <name>21</name>
+    <num>0</num>
+    <area>213</area>
+    <floor>231</floor>
+    <type>21</type>
+  </house>
+  <house number="">
+    <name>1234</name>
+    <num>0</num>
+    <area>243</area>
+    <floor>234</floor>
+    <type>324</type>
+  </house>
+  <house number="">
+    <name>2</name>
+    <num>0</num>
+    <area>231</area>
+    <floor>231</floor>
+    <type>5324658t7iyuhj</type>
+  </house>
+  <house number="">
+    <name>dsew</name>
+    <num>0</num>
+    <area>2</area>
+    <floor>232</floor>
+    <type>23</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>0</num>
+    <area>22</area>
+    <floor>222</floor>
+    <type>22</type>
+  </house>
+  <house number="">
+    <name>12</name>
+    <num>0</num>
+    <area>2</area>
+    <floor>3</floor>
+    <type>erwfd</type>
+  </house>
+  <house number="">
+    <name>23</name>
+    <num>123</num>
+    <area>123</area>
+    <floor>132</floor>
+    <type>12</type>
+  </house>
+  <house number="">
+    <name>e</name>
+    <num>123</num>
+    <area>23</area>
+    <floor>12</floor>
+    <type>213</type>
+  </house>
+  <house number="">
+    <name>qwer</name>
+    <num>321</num>
+    <area>231</area>
+    <floor>213</floor>
+    <type>213</type>
+  </house>
+  <house number="">
+    <name>12</name>
+    <num>213</num>
+    <area>21</area>
+    <floor>124</floor>
+    <type>4</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>123</name>
+    <num>123</num>
+    <area>132</area>
+    <floor>132</floor>
+    <type>312</type>
+  </house>
+  <house number="">
+    <name>213</name>
+    <num>132</num>
+    <area>132</area>
+    <floor>12</floor>
+    <type>132</type>
+  </house>
+  <house number="">
+    <name>12</name>
+    <num>312</num>
+    <area>123</area>
+    <floor>13</floor>
+    <type>312</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>11</area>
+    <floor>11</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>122222222</name>
+    <num>213</num>
+    <area>3</area>
+    <floor>231</floor>
+    <type>213</type>
+  </house>
+  <house number="">
+    <name>2</name>
+    <num>21</num>
+    <area>12</area>
+    <floor>12</floor>
+    <type>12</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>1</num>
+    <area>1</area>
+    <floor>1</floor>
+    <type>1</type>
+  </house>
+  <house number="">
+    <name>124</name>
+    <num>234</num>
+    <area>23321</area>
+    <floor>3</floor>
+    <type>5531</type>
+  </house>
+  <house number="">
+    <name>5</name>
+    <num>523</num>
+    <area>523</area>
+    <floor>125</floor>
+    <type>235</type>
+  </house>
+  <house number="">
+    <name>325</name>
+    <num>23</num>
+    <area>53</area>
+    <floor>2</floor>
+    <type>23</type>
+  </house>
+  <house number="">
+    <name>35</name>
+    <num>35</num>
+    <area>325</area>
+    <floor>35</floor>
+    <type>5352</type>
+  </house>
+  <house number="">
+    <name>3</name>
+    <num>5232</num>
+    <area>325</area>
+    <floor>35</floor>
+    <type>5352</type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>0</num>
+    <area>0</area>
+    <floor>0</floor>
+    <type>
+    </type>
+  </house>
+  <house number="">
+    <name>1</name>
+    <num>2</num>
+    <area>21</area>
+    <floor>2</floor>
+    <type>132</type>
+  </house>
+  <house number="">
+    <name>321</name>
+    <num>123</num>
+    <area>321</area>
+    <floor>231</floor>
+    <type>32</type>
+  </house>
+  <house number="">
+    <name>21</name>
+    <num>12</num>
+    <area>21</area>
+    <floor>12</floor>
+    <type>24</type>
+  </house>
+  <house number="">
+    <name>21</name>
+    <num>12</num>
+    <area>21</area>
+    <floor>21</floor>
+    <type>12</type>
+  </house>
+  <house number="">
+    <name>213</name>
+    <num>3</num>
+    <area>32</area>
+    <floor>21</floor>
+    <type>12</type>
+  </house>
+  <developer number="">
+    <name>Dev name 1</name>
+    <income>1,111111E+10</income>
+    <address>Dev addr 1</address>
+  </developer>
+  <developer number="">
+    <name>Dev name 2</name>
+    <income>2,222222E+12</income>
+    <address>Dev addr 2</address>
+  </developer>
+  <developer number="">
+    <name>213</name>
+    <income>412</income>
+    <address>132</address>
+  </developer>
+  <developer number="">
+    <name>123</name>
+    <income>12</income>
+    <address>124</address>
+  </developer>
+  <developer number="">
+    <name>	123321</name>
+    <income>123</income>
+    <address>132</address>
+  </developer>
+  <developer number="">
+    <name>test</name>
+    <income>101</income>
+    <address>test</address>
+  </developer>
+  <developer number="">
+    <name>12345к34325е67г894562</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>гол</name>
+    <income>0</income>
+    <address>0</address>
+  </developer>
+  <developer number="">
+    <name>232435678904567890567</name>
+    <income>2,345679E+12</income>
+    <address>Россия Москва ул. Пушкина</address>
+  </developer>
+  <developer number="">
+    <name>2345678909876432234</name>
+    <income>5,678654E+09</income>
+    <address>3456787654321</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>2</income>
+    <address>2</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>2</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>w</name>
+    <income>2</income>
+    <address>2</address>
+  </developer>
+  <developer number="">
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>1111111111111111111111111111111</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>2</income>
+    <address>2</address>
+  </developer>
+  <developer number="">
+    <name>213</name>
+    <income>321</income>
+    <address>321</address>
+  </developer>
+  <developer number="">
+    <name>21</name>
+    <income>421</income>
+    <address>421</address>
+  </developer>
+  <developer number="">
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>11111111111111111111111111111111</address>
+  </developer>
+  <developer number="">
+    <name>ё11</name>
+    <income>1</income>
+    <address>11</address>
+  </developer>
+  <developer number="">
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>11111111111111111111111</address>
+  </developer>
+  <developer number="">
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>11111111111111111111111111111111</address>
+  </developer>
+  <developer number="">
+    <name>312</name>
+    <income>132</income>
+    <address>132</address>
+  </developer>
+  <developer number="">
+    <name>24</name>
+    <income>324</income>
+    <address>324</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>2</income>
+    <address>3</address>
+  </developer>
+  <developer number="">
+    <name>123</name>
+    <income>213</income>
+    <address>123</address>
+  </developer>
+  <developer number="">
+    <name>21111111</name>
+    <income>2,222222E+09</income>
+    <address>4444333333333333333333333333</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>12</income>
+    <address>21</address>
+  </developer>
+  <developer number="">
+    <name>132</name>
+    <income>214</income>
+    <address>532</address>
+  </developer>
+  <developer number="">
+    <name>123123</name>
+    <income>32</income>
+    <address>321123</address>
+  </developer>
+  <developer number="">
+    <name>123123</name>
+    <income>32</income>
+    <address>321123</address>
+  </developer>
+  <developer number="">
+    <name>21</name>
+    <income>123</income>
+    <address>132</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>12</income>
+    <address>12</address>
+  </developer>
+  <developer number="">
+    <name>12</name>
+    <income>12</income>
+    <address>12</address>
+  </developer>
+  <developer number="">
+    <name>12</name>
+    <income>12</income>
+    <address>21</address>
+  </developer>
+  <developer number="">
+    <name>213</name>
+    <income>3</income>
+    <address>3</address>
+  </developer>
+  <developer number="">
+    <name>2123</name>
+    <income>21</income>
+    <address>32</address>
+  </developer>
+  <developer number="">
+    <name>3</name>
+    <income>22</income>
+    <address>13</address>
+  </developer>
+  <developer number="">
+    <name>123</name>
+    <income>2</income>
+    <address>4</address>
+  </developer>
+  <developer number="">
+    <name>1234</name>
+    <income>321</income>
+    <address>3</address>
+  </developer>
+  <developer number="">
+    <name>53</name>
+    <income>2</income>
+    <address>213</address>
+  </developer>
+  <developer number="">
+    <name>12</name>
+    <income>123</income>
+    <address>123</address>
+  </developer>
+  <developer number="">
+    <name>21</name>
+    <income>123</income>
+    <address>2</address>
+  </developer>
+  <developer number="">
+    <name>21</name>
+    <income>124</income>
+    <address>214</address>
+  </developer>
+  <developer number="">
+    <name>12</name>
+    <income>124</income>
+    <address>214</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>2</income>
+    <address>23</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>32</income>
+    <address>32</address>
+  </developer>
+  <developer number="">
+    <name>32</name>
+    <income>23</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>2</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="">
+    <name>3</name>
+    <income>3</income>
+    <address>3</address>
+  </developer>
+  <developer number="">
+    <name>TESTdev</name>
+    <income>123</income>
+    <address>London</address>
+  </developer>
+  <developer number="">
+    <name>1</name>
+    <income>11</income>
+    <address>111</address>
+  </developer>
+  <developer number="">
+    <name>3</name>
+    <income>33</income>
+    <address>333</address>
+  </developer>
+</VillagesBase>

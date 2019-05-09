@@ -16,7 +16,7 @@ namespace Correct_Input
     {
         public Input()
         {
-            Console.CursorVisible = false;
+            //Console.CursorVisible = false;
         }
         /// <summary>
         /// Считывает нажатые клавишы и возвращает только те, которые были переданны в метод
@@ -28,7 +28,7 @@ namespace Correct_Input
             ConsoleKeyInfo keyInfo;
             ConsoleKey? key = null;
 
-            while (!keys.Contains<ConsoleKey?>(key))
+            while (!keys.Contains(key))
             {
                 keyInfo = Console.ReadKey(true);
                 key = keyInfo.Key;
@@ -43,7 +43,7 @@ namespace Correct_Input
         {
             int x = Console.CursorLeft;
             string str;
-            bool cont = true, b = true;
+            bool cont = true;
             ConsoleKeyInfo key;
             ConsoleKey? k;
             while (cont)
@@ -94,6 +94,8 @@ namespace Correct_Input
                     }
                     else if (inp.GetType() == typeof(string))
                     {
+                        if (str == "")
+                            throw new Exception();
                         inp = (T)(object)str;
                     }
                     cont = false;

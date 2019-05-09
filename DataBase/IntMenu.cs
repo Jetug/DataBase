@@ -30,11 +30,12 @@ namespace DataBase
         /// </summary>
         public void MainMenu()
         {
+            Console.CursorVisible = false;
             Frames frame = new Frames();
             Input inp = new Input();
             Tables table = new Tables();
-            //table.fileName = "Villages.xml";
-            DlllClass test = new DlllClass();
+
+            table.LoadAll();
 
             ConsoleKey? mKey = null;
             int main_x = 30, main_y = 3;

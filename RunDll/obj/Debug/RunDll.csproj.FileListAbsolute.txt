@@ -12,7 +12,5 @@ C:\C#\RunDll\RunDll\bin\Debug\DataBase.dll
 C:\C#\RunDll\RunDll\bin\Debug\DataBase.pdb
 C:\C#\RunDll\RunDll\bin\Debug\Correct Input.dll
 C:\C#\RunDll\RunDll\bin\Debug\Correct Input.pdb
-C:\C#\RunDll\RunDll\bin\Debug\MyLib.dll
-C:\C#\RunDll\RunDll\bin\Debug\MyLib.pdb
 C:\C#\RunDll\RunDll\obj\Debug\RunDll.csprojAssemblyReference.cache
 C:\C#\RunDll\RunDll\bin\Debug\BaseOutPut.pdb

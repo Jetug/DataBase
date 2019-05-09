@@ -19,12 +19,13 @@ namespace Shell
     //}
     public class Frames
     {
-        public Frames()
-        {
-            Console.CursorVisible = false;
-        }
+        //public Frames()
+        //{
+        //    //Console.CursorVisible = false;
+        //}
         public void Menu(int x, int y, byte len, params string[] titles)
         {
+            Console.CursorVisible = false;
             int start_y = y;
             string line = new string('═', len);
             Console.SetCursorPosition(x, y);
@@ -81,6 +82,7 @@ namespace Shell
         }
         public void Choice(int x, int y, ConsoleColor Col, byte len)
         {
+            Console.CursorVisible = false;
             string line = new string('═', len);
             Console.ForegroundColor = Col;
             Console.SetCursorPosition(x, y);

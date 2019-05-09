@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Villages>
+  <developer number="0">
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer number="0">
+    <name>2</name>
+    <income>3</income>
+    <address>2</address>
+  </developer>
+  <developer number="0">
+    <name>3</name>
+    <income>3</income>
+    <address>3</address>
+  </developer>
+  <village number="0">
+    <name>
+    </name>
+    <dev>
+    </dev>
+    <area>0</area>
+    <people>0</people>
+  </village>
+  <village number="1">
+    <name>
+    </name>
+    <dev>
+    </dev>
+    <area>0</area>
+    <people>0</people>
+  </village>
+  <village number="2">
+    <name>
+    </name>
+    <dev>
+    </dev>
+    <area>0</area>
+    <people>0</people>
+  </village>
+  <village number="3">
+    <name>1</name>
+    <dev>1</dev>
+    <area>1</area>
+    <people>1</people>
+  </village>
+  <village number="4">
+    <name>1</name>
+    <dev>2</dev>
+    <area>2</area>
+    <people>2</people>
+  </village>
+  <village number="5">
+    <name>3</name>
+    <dev>3</dev>
+    <area>3</area>
+    <people>3</people>
+  </village>
+  <house number="0">
+    <name>1</name>
+    <num>2</num>
+    <area>3</area>
+    <floor>4</floor>
+    <type>5</type>
+  </house>
+  <house number="1">
+    <name>123</name>
+    <num>123</num>
+    <area>123</area>
+    <floor>123</floor>
+    <type>123</type>
+  </house>
+  <house number="2">
+    <name>
+    </name>
+    <num>0</num>
+    <area>0</area>
+    <floor>0</floor>
+    <type>
+    </type>
+  </house>
+  <house number="3">
+    <name>
+    </name>
+    <num>0</num>
+    <area>0</area>
+    <floor>0</floor>
+    <type>
+    </type>
+  </house>
+  <house number="4">
+    <name>
+    </name>
+    <num>0</num>
+    <area>0</area>
+    <floor>0</floor>
+    <type>
+    </type>
+  </house>
+  <house number="5">
+    <name>
+    </name>
+    <num>0</num>
+    <area>0</area>
+    <floor>0</floor>
+    <type>
+    </type>
+  </house>
+</Villages>
