@@ -1,1591 +1,472 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VillagesBase>
-  <village number="">
-    <name>name_vill_1</name>
-    <dev>dev_vill_1</dev>
-    <area>111</area>
-    <people>11</people>
-  </village>
-  <village number="">
-    <name>name_vill_2</name>
-    <dev>dev_vill_2</dev>
-    <area>222</area>
-    <people>22</people>
-  </village>
-  <village number="">
-    <name>name_vill_3</name>
-    <dev>dev_vill_3</dev>
-    <area>333</area>
-    <people>33</people>
-  </village>
-  <village number="">
-    <name>Vill name 5</name>
-    <dev>Vill dev 5</dev>
-    <area>5555555</area>
-    <people>555555</people>
-  </village>
-  <village number="">
-    <name>1231</name>
-    <dev>12</dev>
-    <area>4213</area>
-    <people>5231</people>
-  </village>
-  <village number="">
-    <name>1324</name>
-    <dev>475</dev>
-    <area>3745</area>
-    <people>347</people>
-  </village>
-  <village number="">
+  <village>
     <name>1</name>
-    <dev>2</dev>
-    <area>3</area>
-    <people>4</people>
-  </village>
-  <village number="">
-    <name>Test</name>
-    <dev>test</dev>
-    <area>1001</area>
-    <people>110011</people>
-  </village>
-  <village number="">
-    <name>test2</name>
-    <dev>test 22</dev>
-    <area>12345</area>
-    <people>216124</people>
-  </village>
-  <village number="">
-    <name>1111</name>
-    <dev>1111</dev>
-    <area>1111</area>
-    <people>1111</people>
-  </village>
-  <village number="">
-    <name>222</name>
-    <dev>222</dev>
-    <area>222</area>
-    <people>222</people>
-  </village>
-  <village number="">
-    <name>3</name>
-    <dev>33</dev>
-    <area>33</area>
-    <people>33</people>
-  </village>
-  <village number="">
-    <name>4</name>
-    <dev>4</dev>
-    <area>4</area>
-    <people>4</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
+    <dev>Dev name 2</dev>
     <area>1</area>
     <people>1</people>
   </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
+  <village>
+    <name>12</name>
+    <dev>Dev name 2</dev>
     <area>1</area>
     <people>1</people>
   </village>
-  <village number="">
-    <name>1232</name>
-    <dev>123</dev>
-    <area>213</area>
+  <village>
+    <name>12</name>
+    <dev>Dev name 2</dev>
+    <area>12</area>
+    <people>1</people>
+  </village>
+  <village>
+    <name>122</name>
+    <dev>Dev name 2</dev>
+    <area>21</area>
     <people>12</people>
   </village>
-  <village number="">
-    <name>23112</name>
-    <dev>214</dev>
-    <area>214</area>
-    <people>214</people>
-  </village>
-  <village number="">
-    <name>213</name>
-    <dev>21</dev>
-    <area>24121</area>
-    <people>4214</people>
-  </village>
-  <village number="">
-    <name>214</name>
-    <dev>412</dev>
-    <area>421</area>
-    <people>124</people>
-  </village>
-  <village number="">
+  <village>
     <name>12</name>
-    <dev>4132</dev>
-    <area>413</area>
-    <people>1432</people>
-  </village>
-  <village number="">
-    <name>24</name>
-    <dev>152</dev>
-    <area>5321</area>
-    <people>1523</people>
-  </village>
-  <village number="">
-    <name>321</name>
-    <dev>2153</dev>
-    <area>1235</area>
-    <people>1253</people>
-  </village>
-  <village number="">
-    <name>253</name>
-    <dev>25</dev>
-    <area>21</area>
-    <people>25</people>
-  </village>
-  <village number="">
-    <name>tets</name>
-    <dev>sewf</dev>
-    <area>23</area>
+    <dev>Dev name 2</dev>
+    <area>132</area>
     <people>23</people>
   </village>
-  <village number="">
-    <name>last</name>
-    <dev>lasr</dev>
-    <area>1457</area>
-    <people>1457</people>
-  </village>
-  <village number="">
-    <name>qq</name>
-    <dev>qq</dev>
-    <area>99</area>
-    <people>99</people>
-  </village>
-  <village number="">
-    <name>ццц</name>
-    <dev>цццц</dev>
-    <area>1213</area>
-    <people>31</people>
-  </village>
-  <village number="">
-    <name>1q</name>
-    <dev>q1</dev>
-    <area>11</area>
-    <people>11</people>
-  </village>
-  <village number="">
-    <name>we</name>
-    <dev>ee</dev>
-    <area>2</area>
-    <people>32</people>
-  </village>
-  <village number="">
-    <name>214</name>
-    <dev>33</dev>
-    <area>33</area>
-    <people>33</people>
-  </village>
-  <village number="">
-    <name>е</name>
-    <dev>е</dev>
-    <area>21</area>
-    <people>12</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
+  <village>
+    <name>rf</name>
+    <dev>Dev name 2</dev>
     <area>1</area>
-    <people>1</people>
+    <people>5234</people>
   </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>234</name>
-    <dev>24</dev>
-    <area>142</area>
-    <people>142</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
+  <village>
     <name>2</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
+    <dev>Dev name 2</dev>
+    <area>1232</area>
+    <people>1332</people>
   </village>
-  <village number="">
-    <name>3</name>
-    <dev>
-    </dev>
-    <area>3</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>r</name>
-    <dev>344v</dev>
-    <area>2</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>2</name>
-    <dev>213</dev>
-    <area>2</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>11</name>
-    <dev>343</dev>
-    <area>5</area>
-    <people>523</people>
-  </village>
-  <village number="">
-    <name>2113</name>
-    <dev>23232</dev>
-    <area>13</area>
-    <people>42</people>
-  </village>
-  <village number="">
-    <name>23</name>
-    <dev>21</dev>
-    <area>21</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>2</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>12</name>
-    <dev>q</dev>
-    <area>23</area>
-    <people>6564</people>
-  </village>
-  <village number="">
-    <name>test</name>
-    <dev>test</dev>
-    <area>123,5</area>
-    <people>12343</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1,123457</area>
-    <people>234567890</people>
-  </village>
-  <village number="">
-    <name>dfghjk</name>
-    <dev>dfghjkl</dev>
-    <area>1234,57</area>
-    <people>456789</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>3r4t56</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>213</name>
-    <dev>32</dev>
-    <area>33</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>2345678</name>
-    <dev>90-=-</dev>
-    <area>4,567899E+07</area>
-    <people>564</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>42554</name>
-    <dev>53</dev>
-    <area>45</area>
-    <people>54</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>11</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>343435</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>23</dev>
-    <area>43</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>2134r4</name>
-    <dev>43</dev>
-    <area>324</area>
-    <people>324</people>
-  </village>
-  <village number="">
-    <name>332</name>
-    <dev>21</dev>
-    <area>412</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
+  <village>
     <name>21</name>
-    <dev>21</dev>
+    <dev>Dev name 2</dev>
     <area>21</area>
-    <people>21</people>
+    <people>41</people>
   </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
+  <village>
+    <name>121</name>
+    <dev>Dev name 2</dev>
+    <area>52</area>
+    <people>5324</people>
   </village>
-  <village number="">
-    <name>12</name>
-    <dev>21</dev>
-    <area>12</area>
-    <people>12</people>
+  <village>
+    <name>5</name>
+    <dev>Dev name 2</dev>
+    <area>352</area>
+    <people>23</people>
   </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
+  <village>
+    <name>45</name>
+    <dev>Dev name 2</dev>
+    <area>123</area>
+    <people>43</people>
   </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>
-    </dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>w</name>
-    <dev>w</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>12</name>
-    <dev>124</dev>
-    <area>512</area>
-    <people>325</people>
-  </village>
-  <village number="">
-    <name>234e</name>
-    <dev>332</dev>
-    <area>24</area>
-    <people>21</people>
-  </village>
-  <village number="">
-    <name>test</name>
-    <dev>test</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>qq</name>
-    <dev>qq</dev>
-    <area>99</area>
-    <people>99</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1234567890098765432111</name>
-    <dev>qwertyuiop[[';lkjhgfd</dev>
-    <area>8,765431E+12</area>
-    <people>123456789</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>2131</dev>
-    <area>41</area>
-    <people>4132</people>
-  </village>
-  <village number="">
-    <name>wqertyuio;luytgdsfghju</name>
-    <dev>12345t678io90sdfghjkl</dev>
-    <area>1,123457E+12</area>
-    <people>345678905</people>
-  </village>
-  <village number="">
-    <name>2</name>
-    <dev>214412</dev>
-    <area>52521</area>
-    <people>521</people>
-  </village>
-  <village number="">
-    <name>12362</name>
-    <dev>42</dev>
-    <area>51</area>
-    <people>236</people>
-  </village>
-  <village number="">
-    <name>2</name>
-    <dev>24422</dev>
-    <area>234</area>
-    <people>35</people>
-  </village>
-  <village number="">
-    <name>1234</name>
-    <dev>21</dev>
-    <area>21</area>
-    <people>213</people>
-  </village>
-  <village number="">
-    <name>34534</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>2134</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>12</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>12345</name>
-    <dev>w</dev>
-    <area>2</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>234</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>2345</name>
-    <dev>www</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>2wertfgh</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>23e</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>2we</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>234</name>
-    <dev>efwr</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>3ert</name>
-    <dev>2</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>23443</name>
-    <dev>
-    </dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>1234ert</name>
-    <dev>ц</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>23</dev>
+  <village>
+    <name>1323242</name>
+    <dev>2345678909876432234</dev>
     <area>3</area>
-    <people>2</people>
+    <people>432</people>
   </village>
-  <village number="">
-    <name>3ук</name>
-    <dev>
-    </dev>
-    <area>12</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>sdcv</name>
-    <dev>
-    </dev>
-    <area>3</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>ewrtgrhergthhyjrmfe</name>
-    <dev>r</dev>
-    <area>33333</area>
-    <people>2234</people>
-  </village>
-  <village number="">
-    <name>12w3e2</name>
-    <dev>test</dev>
-    <area>1,110011E+07</area>
-    <people>34567890</people>
-  </village>
-  <village number="">
-    <name>TEST!</name>
-    <dev>test</dev>
-    <area>1,111111E+12</area>
-    <people>0</people>
-  </village>
-  <village number="">
-    <name>1111111111111111111111</name>
-    <dev>1</dev>
-    <area>1,111111E+12</area>
-    <people>111111111</people>
-  </village>
-  <village number="">
+  <village>
     <name>234</name>
     <dev>Dev name 2</dev>
-    <area>4</area>
-    <people>54</people>
+    <area>324</area>
+    <people>34</people>
   </village>
-  <village number="">
-    <name>qwergt</name>
-    <dev>Dev name 1</dev>
-    <area>3</area>
-    <people>3</people>
+  <village>
+    <name>qwertersdf</name>
+    <dev>Dev name 2</dev>
+    <area>3,426788E+09</area>
+    <people>76</people>
   </village>
-  <village number="">
-    <name>1111111111111111111111</name>
-    <dev>1</dev>
-    <area>1,111111E+12</area>
-    <people>111111111</people>
-  </village>
-  <village number="">
-    <name>12</name>
-    <dev>Dev name 1</dev>
-    <area>3</area>
-    <people>23</people>
-  </village>
-  <village number="">
-    <name>1111111111111111111111</name>
-    <dev>111111111111111111111</dev>
-    <area>1,111111E+12</area>
-    <people>111111111</people>
-  </village>
-  <village number="">
-    <name>w</name>
-    <dev>w</dev>
-    <area>3</area>
-    <people>3</people>
-  </village>
-  <village number="">
-    <name>12</name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>312</people>
-  </village>
-  <village number="">
-    <name>21</name>
-    <dev>Dev name 1</dev>
-    <area>4</area>
-    <people>4</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>Dev name 1</dev>
-    <area>321</area>
-    <people>321</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>112</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>q2w</name>
-    <dev>Dev name 1</dev>
-    <area>72</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>q1</name>
-    <dev>1</dev>
-    <area>2</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>12</name>
-    <dev>Dev name 1</dev>
-    <area>22</area>
-    <people>2</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>Dev name 1</dev>
-    <area>0</area>
-    <people>0</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1233</name>
-    <dev>Dev name 1</dev>
-    <area>2413</area>
-    <people>214</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>Dev name 1</dev>
-    <area>124</area>
-    <people>124</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>Dev name 1</dev>
-    <area>0</area>
-    <people>0</people>
-  </village>
-  <village number="">
-    <name>q</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>21</name>
-    <dev>Dev name 1</dev>
-    <area>21</area>
-    <people>21</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>Dev name 1</dev>
-    <area>43</area>
-    <people>4</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>123</people>
-  </village>
-  <village number="">
-    <name>12</name>
-    <dev>Dev name 1</dev>
-    <area>12</area>
-    <people>12</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>321</people>
-  </village>
-  <village number="">
-    <name>112</name>
-    <dev>Dev name 1</dev>
-    <area>112</area>
-    <people>112</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>123</people>
-  </village>
-  <village number="">
-    <name>
-    </name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>123</people>
-  </village>
-  <village number="">
-    <name>133</name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>123</people>
-  </village>
-  <village number="">
-    <name>133</name>
-    <dev>Dev name 1</dev>
-    <area>123</area>
-    <people>123</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>Dev name 1</dev>
-    <area>32</area>
-    <people>214</people>
-  </village>
-  <village number="">
-    <name>123</name>
-    <dev>Dev name 1</dev>
-    <area>32</area>
-    <people>214</people>
-  </village>
-  <village number="">
-    <name>122</name>
-    <dev>Dev name 1</dev>
-    <area>21</area>
-    <people>12</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>1</area>
-    <people>1</people>
-  </village>
-  <village number="">
-    <name>311</name>
-    <dev>Dev name 1</dev>
-    <area>42</area>
-    <people>31</people>
-  </village>
-  <village number="">
-    <name>311</name>
-    <dev>Dev name 1</dev>
-    <area>42</area>
-    <people>31</people>
-  </village>
-  <village number="">
-    <name>311</name>
-    <dev>Dev name 1</dev>
-    <area>42</area>
-    <people>31</people>
-  </village>
-  <village number="">
-    <name>&lt;&gt;</name>
-    <dev>Dev name 1</dev>
-    <area>0</area>
-    <people>0</people>
-  </village>
-  <village number="">
-    <name>1</name>
-    <dev>Dev name 1</dev>
-    <area>21</area>
-    <people>21</people>
-  </village>
-  <house number="">
-    <name>name_hs_1</name>
-    <num>11</num>
-    <area>1</area>
-    <floor>11</floor>
-    <type>type_hs_1</type>
-  </house>
-  <house number="">
-    <name>name_hs_2</name>
-    <num>22</num>
-    <area>2</area>
-    <floor>22</floor>
-    <type>type_hs_2</type>
-  </house>
-  <house number="">
-    <name>21</name>
-    <num>312</num>
-    <area>12</area>
-    <floor>21</floor>
-    <type>21</type>
-  </house>
-  <house number="">
-    <name>12</name>
-    <num>12</num>
-    <area>12</area>
-    <floor>21</floor>
-    <type>21</type>
-  </house>
-  <house number="">
-    <name>12</name>
-    <num>21</num>
-    <area>21</area>
-    <floor>21</floor>
-    <type>12</type>
-  </house>
-  <house number="">
-    <name>123</name>
-    <num>12</num>
-    <area>132</area>
-    <floor>132</floor>
-    <type>123</type>
-  </house>
-  <house number="">
-    <name>321</name>
-    <num>123</num>
-    <area>13</area>
-    <floor>12</floor>
-    <type>2314</type>
-  </house>
-  <house number="">
-    <name>test</name>
-    <num>23</num>
-    <area>24</area>
-    <floor>24</floor>
-    <type>24</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>11</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>2</name>
-    <num>0</num>
-    <area>2</area>
-    <floor>2</floor>
-    <type>2</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>0</num>
-    <area>1</area>
-    <floor>11</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>2</name>
-    <num>0</num>
-    <area>2</area>
-    <floor>2</floor>
-    <type>2</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>0</num>
-    <area>2</area>
-    <floor>2</floor>
-    <type>2</type>
-  </house>
-  <house number="">
-    <name>21</name>
-    <num>0</num>
-    <area>213</area>
-    <floor>231</floor>
-    <type>21</type>
-  </house>
-  <house number="">
-    <name>1234</name>
-    <num>0</num>
-    <area>243</area>
-    <floor>234</floor>
-    <type>324</type>
-  </house>
-  <house number="">
-    <name>2</name>
-    <num>0</num>
-    <area>231</area>
-    <floor>231</floor>
-    <type>5324658t7iyuhj</type>
-  </house>
-  <house number="">
-    <name>dsew</name>
-    <num>0</num>
-    <area>2</area>
-    <floor>232</floor>
-    <type>23</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>0</num>
-    <area>22</area>
-    <floor>222</floor>
-    <type>22</type>
-  </house>
-  <house number="">
-    <name>12</name>
-    <num>0</num>
-    <area>2</area>
-    <floor>3</floor>
-    <type>erwfd</type>
-  </house>
-  <house number="">
-    <name>23</name>
-    <num>123</num>
-    <area>123</area>
-    <floor>132</floor>
-    <type>12</type>
-  </house>
-  <house number="">
-    <name>e</name>
-    <num>123</num>
+  <village>
+    <name>2w</name>
+    <dev>Dev name 2</dev>
     <area>23</area>
-    <floor>12</floor>
-    <type>213</type>
-  </house>
-  <house number="">
-    <name>qwer</name>
-    <num>321</num>
-    <area>231</area>
-    <floor>213</floor>
-    <type>213</type>
-  </house>
-  <house number="">
-    <name>12</name>
-    <num>213</num>
+    <people>2</people>
+  </village>
+  <village>
+    <name>Test</name>
+    <dev>test</dev>
+    <area>1111</area>
+    <people>2222</people>
+  </village>
+  <village>
+    <name>11</name>
+    <dev>GUG</dev>
+    <area>33</area>
+    <people>44</people>
+  </village>
+  <village>
+    <name>2</name>
+    <dev>123</dev>
+    <area>12</area>
+    <people>2</people>
+  </village>
+  <village>
+    <name>221</name>
+    <dev>213</dev>
+    <area>132</area>
+    <people>142</people>
+  </village>
+  <village>
+    <name>GIG</name>
+    <dev>GUG</dev>
+    <area>919</area>
+    <people>909</people>
+  </village>
+  <village>
+    <name>1</name>
+    <dev>Dev name 1</dev>
     <area>21</area>
-    <floor>124</floor>
-    <type>4</type>
+    <people>12</people>
+  </village>
+  <house>
+    <name>sdf</name>
+    <num>12312</num>
+    <area>123412</area>
+    <floor>123</floor>
+    <type>ыв</type>
   </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
+  <house>
+    <name>ываыва</name>
+    <num>65432</num>
+    <area>999999</area>
+    <floor>123</floor>
+    <type>йкйцуцйуйц</type>
   </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>123</name>
-    <num>123</num>
-    <area>132</area>
-    <floor>132</floor>
-    <type>312</type>
-  </house>
-  <house number="">
-    <name>213</name>
-    <num>132</num>
-    <area>132</area>
-    <floor>12</floor>
-    <type>132</type>
-  </house>
-  <house number="">
-    <name>12</name>
-    <num>312</num>
-    <area>123</area>
-    <floor>13</floor>
-    <type>312</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>11</area>
-    <floor>11</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>122222222</name>
-    <num>213</num>
-    <area>3</area>
-    <floor>231</floor>
-    <type>213</type>
-  </house>
-  <house number="">
+  <house>
     <name>2</name>
     <num>21</num>
-    <area>12</area>
-    <floor>12</floor>
-    <type>12</type>
+    <area>3</area>
+    <floor>4</floor>
+    <type>5123</type>
   </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>1</num>
-    <area>1</area>
-    <floor>1</floor>
-    <type>1</type>
-  </house>
-  <house number="">
-    <name>124</name>
-    <num>234</num>
-    <area>23321</area>
-    <floor>3</floor>
-    <type>5531</type>
-  </house>
-  <house number="">
-    <name>5</name>
-    <num>523</num>
-    <area>523</area>
-    <floor>125</floor>
-    <type>235</type>
-  </house>
-  <house number="">
-    <name>325</name>
-    <num>23</num>
-    <area>53</area>
-    <floor>2</floor>
-    <type>23</type>
-  </house>
-  <house number="">
-    <name>35</name>
-    <num>35</num>
-    <area>325</area>
-    <floor>35</floor>
-    <type>5352</type>
-  </house>
-  <house number="">
-    <name>3</name>
-    <num>5232</num>
-    <area>325</area>
-    <floor>35</floor>
-    <type>5352</type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>0</num>
-    <area>0</area>
-    <floor>0</floor>
-    <type>
-    </type>
-  </house>
-  <house number="">
-    <name>1</name>
-    <num>2</num>
-    <area>21</area>
-    <floor>2</floor>
-    <type>132</type>
-  </house>
-  <house number="">
-    <name>321</name>
-    <num>123</num>
-    <area>321</area>
-    <floor>231</floor>
-    <type>32</type>
-  </house>
-  <house number="">
-    <name>21</name>
-    <num>12</num>
-    <area>21</area>
-    <floor>12</floor>
-    <type>24</type>
-  </house>
-  <house number="">
-    <name>21</name>
-    <num>12</num>
-    <area>21</area>
-    <floor>21</floor>
-    <type>12</type>
-  </house>
-  <house number="">
-    <name>213</name>
+  <house>
+    <name>Q</name>
     <num>3</num>
-    <area>32</area>
-    <floor>21</floor>
-    <type>12</type>
+    <area>35</area>
+    <floor>45</floor>
+    <type>56</type>
   </house>
-  <developer number="">
+  <house>
+    <name>543</name>
+    <num>454</num>
+    <area>3244</area>
+    <floor>45</floor>
+    <type>T4</type>
+  </house>
+  <house>
+    <name>5HT4T3</name>
+    <num>43456</num>
+    <area>44</area>
+    <floor>56</floor>
+    <type>432</type>
+  </house>
+  <house>
+    <name>45</name>
+    <num>4</num>
+    <area>6</area>
+    <floor>5</floor>
+    <type>gfhnbm</type>
+  </house>
+  <house>
+    <name>dght4</name>
+    <num>2</num>
+    <area>10</area>
+    <floor>223</floor>
+    <type>2</type>
+  </house>
+  <house>
+    <name>23</name>
+    <num>23</num>
+    <area>4</area>
+    <floor>34</floor>
+    <type>wrety3</type>
+  </house>
+  <developer>
     <name>Dev name 1</name>
     <income>1,111111E+10</income>
     <address>Dev addr 1</address>
   </developer>
-  <developer number="">
+  <developer>
+    <name>Dev name 1</name>
+    <income>1,111111E+10</income>
+    <address>Dev addr 1</address>
+  </developer>
+  <developer>
     <name>Dev name 2</name>
     <income>2,222222E+12</income>
     <address>Dev addr 2</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>213</name>
     <income>412</income>
     <address>132</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>123</name>
     <income>12</income>
     <address>124</address>
   </developer>
-  <developer number="">
-    <name>	123321</name>
-    <income>123</income>
-    <address>132</address>
-  </developer>
-  <developer number="">
+  <developer>
     <name>test</name>
     <income>101</income>
     <address>test</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>12345к34325е67г894562</name>
     <income>1</income>
     <address>1</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>гол</name>
     <income>0</income>
     <address>0</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>232435678904567890567</name>
     <income>2,345679E+12</income>
     <address>Россия Москва ул. Пушкина</address>
   </developer>
-  <developer number="">
-    <name>2345678909876432234</name>
-    <income>5,678654E+09</income>
-    <address>3456787654321</address>
-  </developer>
-  <developer number="">
-    <name>1</name>
-    <income>1</income>
-    <address>1</address>
-  </developer>
-  <developer number="">
-    <name>1</name>
-    <income>1</income>
-    <address>1</address>
-  </developer>
-  <developer number="">
-    <name>2</name>
-    <income>2</income>
-    <address>2</address>
-  </developer>
-  <developer number="">
+  <developer>
     <name>1</name>
     <income>1</income>
     <address>2</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>1</name>
     <income>1</income>
     <address>1</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>w</name>
     <income>2</income>
     <address>2</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>111111111111111111111</name>
     <income>1,111111E+12</income>
     <address>1111111111111111111111111111111</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>2</name>
     <income>2</income>
     <address>2</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>213</name>
     <income>321</income>
     <address>321</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>21</name>
     <income>421</income>
     <address>421</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>111111111111111111111</name>
     <income>1,111111E+12</income>
     <address>11111111111111111111111111111111</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>ё11</name>
     <income>1</income>
     <address>11</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>111111111111111111111</name>
     <income>1,111111E+12</income>
     <address>11111111111111111111111</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>111111111111111111111</name>
     <income>1,111111E+12</income>
     <address>11111111111111111111111111111111</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>312</name>
     <income>132</income>
     <address>132</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>24</name>
     <income>324</income>
     <address>324</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>1</name>
     <income>1</income>
     <address>1</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>1</name>
     <income>1</income>
     <address>1</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>1</name>
     <income>2</income>
     <address>3</address>
   </developer>
-  <developer number="">
-    <name>123</name>
-    <income>213</income>
-    <address>123</address>
+  <developer>
+    <name>Dev name 2</name>
+    <income>2,222222E+12</income>
+    <address>Dev addr 2</address>
   </developer>
-  <developer number="">
-    <name>21111111</name>
-    <income>2,222222E+09</income>
-    <address>4444333333333333333333333333</address>
-  </developer>
-  <developer number="">
-    <name>2</name>
-    <income>12</income>
-    <address>21</address>
-  </developer>
-  <developer number="">
-    <name>132</name>
-    <income>214</income>
-    <address>532</address>
-  </developer>
-  <developer number="">
-    <name>123123</name>
-    <income>32</income>
-    <address>321123</address>
-  </developer>
-  <developer number="">
-    <name>123123</name>
-    <income>32</income>
-    <address>321123</address>
-  </developer>
-  <developer number="">
-    <name>21</name>
-    <income>123</income>
+  <developer>
+    <name>213</name>
+    <income>412</income>
     <address>132</address>
   </developer>
-  <developer number="">
-    <name>2</name>
-    <income>12</income>
-    <address>12</address>
-  </developer>
-  <developer number="">
-    <name>12</name>
-    <income>12</income>
-    <address>12</address>
-  </developer>
-  <developer number="">
-    <name>12</name>
-    <income>12</income>
-    <address>21</address>
-  </developer>
-  <developer number="">
-    <name>213</name>
-    <income>3</income>
-    <address>3</address>
-  </developer>
-  <developer number="">
-    <name>2123</name>
-    <income>21</income>
-    <address>32</address>
-  </developer>
-  <developer number="">
-    <name>3</name>
-    <income>22</income>
-    <address>13</address>
-  </developer>
-  <developer number="">
+  <developer>
     <name>123</name>
+    <income>12</income>
+    <address>124</address>
+  </developer>
+  <developer>
+    <name>test</name>
+    <income>101</income>
+    <address>test</address>
+  </developer>
+  <developer>
+    <name>12345к34325е67г894562</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer>
+    <name>гол</name>
+    <income>0</income>
+    <address>0</address>
+  </developer>
+  <developer>
+    <name>232435678904567890567</name>
+    <income>2,345679E+12</income>
+    <address>Россия Москва ул. Пушкина</address>
+  </developer>
+  <developer>
+    <name>2345678909876432234</name>
+    <income>5,678654E+09</income>
+    <address>3456787654321</address>
+  </developer>
+  <developer>
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer>
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
+  </developer>
+  <developer>
+    <name>2</name>
     <income>2</income>
-    <address>4</address>
-  </developer>
-  <developer number="">
-    <name>1234</name>
-    <income>321</income>
-    <address>3</address>
-  </developer>
-  <developer number="">
-    <name>53</name>
-    <income>2</income>
-    <address>213</address>
-  </developer>
-  <developer number="">
-    <name>12</name>
-    <income>123</income>
-    <address>123</address>
-  </developer>
-  <developer number="">
-    <name>21</name>
-    <income>123</income>
     <address>2</address>
   </developer>
-  <developer number="">
-    <name>21</name>
-    <income>124</income>
-    <address>214</address>
+  <developer>
+    <name>1</name>
+    <income>1</income>
+    <address>2</address>
   </developer>
-  <developer number="">
-    <name>12</name>
-    <income>124</income>
-    <address>214</address>
+  <developer>
+    <name>1</name>
+    <income>1</income>
+    <address>1</address>
   </developer>
-  <developer number="">
+  <developer>
+    <name>w</name>
+    <income>2</income>
+    <address>2</address>
+  </developer>
+  <developer>
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>1111111111111111111111111111111</address>
+  </developer>
+  <developer>
     <name>2</name>
     <income>2</income>
-    <address>23</address>
+    <address>2</address>
   </developer>
-  <developer number="">
-    <name>2</name>
-    <income>32</income>
-    <address>32</address>
+  <developer>
+    <name>213</name>
+    <income>321</income>
+    <address>321</address>
   </developer>
-  <developer number="">
-    <name>32</name>
-    <income>23</income>
-    <address>1</address>
+  <developer>
+    <name>21</name>
+    <income>421</income>
+    <address>421</address>
   </developer>
-  <developer number="">
+  <developer>
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>11111111111111111111111111111111</address>
+  </developer>
+  <developer>
+    <name>ё11</name>
+    <income>1</income>
+    <address>11</address>
+  </developer>
+  <developer>
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>11111111111111111111111</address>
+  </developer>
+  <developer>
+    <name>111111111111111111111</name>
+    <income>1,111111E+12</income>
+    <address>11111111111111111111111111111111</address>
+  </developer>
+  <developer>
+    <name>312</name>
+    <income>132</income>
+    <address>132</address>
+  </developer>
+  <developer>
+    <name>24</name>
+    <income>324</income>
+    <address>324</address>
+  </developer>
+  <developer>
     <name>1</name>
     <income>1</income>
     <address>1</address>
   </developer>
-  <developer number="">
+  <developer>
     <name>1</name>
-    <income>1</income>
-    <address>1</address>
+    <income>2</income>
+    <address>3</address>
   </developer>
-  <developer number="">
-    <name>2</name>
-    <income>1</income>
-    <address>1</address>
-  </developer>
-  <developer number="">
+  <developer>
     <name>3</name>
     <income>3</income>
     <address>3</address>
   </developer>
-  <developer number="">
-    <name>TESTdev</name>
-    <income>123</income>
-    <address>London</address>
+  <developer>
+    <name>132</name>
+    <income>213</income>
+    <address>312</address>
   </developer>
-  <developer number="">
-    <name>1</name>
-    <income>11</income>
-    <address>111</address>
+  <developer>
+    <name>32</name>
+    <income>23</income>
+    <address>43</address>
   </developer>
-  <developer number="">
-    <name>3</name>
-    <income>33</income>
-    <address>333</address>
+  <developer>
+    <name>34</name>
+    <income>2</income>
+    <address>34</address>
+  </developer>
+  <developer>
+    <name>GUG</name>
+    <income>1</income>
+    <address>GUI</address>
   </developer>
 </VillagesBase>

@@ -4,3 +4,6 @@ C:\C#\RunDll\Shell\obj\Debug\Shell.csproj.CoreCompileInputs.cache
 C:\C#\RunDll\Shell\obj\Debug\Shell.dll
 C:\C#\RunDll\Shell\obj\Debug\Shell.pdb
 C:\C#\RunDll\Shell\obj\Debug\Shell.csprojAssemblyReference.cache
+C:\C#\RunDll\Shell\bin\Debug\Correct Input.dll
+C:\C#\RunDll\Shell\bin\Debug\Correct Input.pdb
+C:\C#\RunDll\Shell\obj\Debug\Shell.csproj.CopyComplete

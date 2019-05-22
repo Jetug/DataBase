@@ -34,23 +34,21 @@ namespace DataBase
             Frames frame = new Frames();
             Input inp = new Input();
             Tables table = new Tables();
-
-            table.LoadAll();
+            //table.LoadAll();
 
             ConsoleKey? mKey = null;
             int main_x = 30, main_y = 3;
             bool canСontinue = true;
 
-            frame.Menu(30, 3, 30, "Ввод базы данных", "Редактирование базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
+            frame.Menu(30, 3, 30, "Ввод базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
             frame.Choice(main_x, main_y, col, 30);
             while (canСontinue)
             {
                 mKey = inp.InputKey(ConsoleKey.DownArrow, ConsoleKey.UpArrow, ConsoleKey.Enter);
 
-                if ((mKey == ConsoleKey.DownArrow) & (main_y != 15))
+                if ((mKey == ConsoleKey.DownArrow) & (main_y != 12))
                 {
-                    //if (main_y != 3)
-                        frame.Choice(main_x, main_y, ConsoleColor.White, 30);
+                    frame.Choice(main_x, main_y, ConsoleColor.White, 30);
                     main_y += 3;
                     frame.Choice(main_x, main_y, col, 30);
                 }
@@ -66,7 +64,8 @@ namespace DataBase
                     int x = 30, y = 3;
                     switch (main_y)
                     {
-                        case 12: // Ввод имени файла
+                        // Выбор файла для хранения данных
+                        case 9: 
                             Console.Clear();
                             frame.Menu(30, 3, 30, "Выброр существующего файла", "Создание нового файла", "Удаление файла");
                             ConsoleKey? key = null;
@@ -117,13 +116,15 @@ namespace DataBase
                             }
                             
                             Console.Clear();
-                            frame.Menu(30, 3, 30, "Ввод базы данных", "Редактирование базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
-                            //main_y = 0;
+                            frame.Menu(30, 3, 30, "Ввод базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
                             frame.Choice(main_x, main_y, col, 30);
                             break;
-                        case 15: // Выход из программы
+
+                        // Выход из программы
+                        case 12: 
                             canСontinue = false;
                             break;
+
                         default:
                             Console.Clear();
                             frame.Menu(30, 3, 18, "Таблица посёлков", "Таблица домов", "Таблица девелоперов");
@@ -158,19 +159,19 @@ namespace DataBase
                                                 case 3:
                                                     if (main_y == 3)
                                                         table.ReadVellage();
-                                                    else if (main_y == 9)
+                                                    else if (main_y == 6)
                                                         table.WriteVillage();
                                                     break;
                                                 case 6:
                                                     if (main_y == 3)
                                                         table.ReadHouse();
-                                                    else if (main_y == 9)
+                                                    else if (main_y == 6)
                                                         table.WriteHouse();
                                                     break;
                                                 case 9:
                                                     if (main_y == 3)
                                                         table.ReadDeveloper();
-                                                    else if (main_y == 9)
+                                                    else if (main_y == 6)
                                                         table.WriteDeveloper();
                                                     break;
                                             }
@@ -198,7 +199,7 @@ namespace DataBase
                                         break;
                                     case ConsoleKey.Escape:
                                         Console.Clear();
-                                        frame.Menu(30, 3, 30, "Ввод базы данных", "Редактирование базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
+                                        frame.Menu(30, 3, 30, "Ввод базы данных", "Вывод базы данных", "Выбор файла", "Выход из программы");
                                         //main_y = 3;
                                         frame.Choice(main_x, main_y, col, 30);
                                         break;
